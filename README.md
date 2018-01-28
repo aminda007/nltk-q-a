@@ -8,11 +8,11 @@ use python nltk library to identify sentenses and words and create answers for a
 
 python
 
-    import nltk
+    >>>import nltk
     
-    nltk.download()
+    >>>nltk.download()
     
-    select 'all' and click download from gui window
+        select 'all' and click download from gui window
 
 
 ### POS tag list:
