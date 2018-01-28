@@ -17,93 +17,93 @@ python
 
 ### POS tag list:
 
-CC	coordinating conjunction
+> CC	coordinating conjunction
 
-CD	cardinal digit
+> CD	cardinal digit
 
-DT	determiner
+> DT	determiner
 
-EX	existential there (like: "there is" ... think of it like "there exists")
+> EX	existential there (like: "there is" ... think of it like "there exists")
 
-FW	foreign word
+> FW	foreign word
 
-IN	preposition/subordinating conjunction
+> IN	preposition/subordinating conjunction
 
-JJ	adjective	'big'
+> JJ	adjective	'big'
 
-JJR	adjective, comparative	'bigger'
+> JJR	adjective, comparative	'bigger'
 
-JJS	adjective, superlative	'biggest'
+> JJS	adjective, superlative	'biggest'
 
-LS	list marker	1)
+> LS	list marker	1)
 
-MD	modal	could, will
+> MD	modal	could, will
 
-NN	noun, singular 'desk'
+> NN	noun, singular 'desk'
 
-NNS	noun plural	'desks'
+> NNS	noun plural	'desks'
 
-NNP	proper noun, singular	'Harrison'
+> NNP	proper noun, singular	'Harrison'
 
-NNPS	proper noun, plural	'Americans'
+> NNPS	proper noun, plural	'Americans'
 
-PDT	predeterminer	'all the kids'
+> PDT	predeterminer	'all the kids'
 
-POS	possessive ending	parent's
+> POS	possessive ending	parent's
 
-PRP	personal pronoun	I, he, she
+> PRP	personal pronoun	I, he, she
 
-PRP$	possessive pronoun	my, his, hers
+> PRP$	possessive pronoun	my, his, hers
 
-RB	adverb	very, silently,
+> RB	adverb	very, silently,
 
-RBR	adverb, comparative	better
+> RBR	adverb, comparative	better
 
-RBS	adverb, superlative	best
+> RBS	adverb, superlative	best
 
-RP	particle	give up
+> RP	particle	give up
 
-TO	to	go 'to' the store.
+> TO	to	go 'to' the store.
 
-UH	interjection	errrrrrrrm
+> UH	interjection	errrrrrrrm
 
-VB	verb, base form	take
+> VB	verb, base form	take
 
-VBD	verb, past tense	took
+> VBD	verb, past tense	took
 
-VBG	verb, gerund/present participle	taking
+> VBG	verb, gerund/present participle	taking
 
-VBN	verb, past participle	taken
+> VBN	verb, past participle	taken
 
-VBP	verb, sing. present, non-3d	take
+> VBP	verb, sing. present, non-3d	take
 
-VBZ	verb, 3rd person sing. present	takes
+> VBZ	verb, 3rd person sing. present	takes
 
-WDT	wh-determiner	which
+> WDT	wh-determiner	which
 
-WP	wh-pronoun	who, what
+> WP	wh-pronoun	who, what
 
-WP$	possessive wh-pronoun	whose
+> WP$	possessive wh-pronoun	whose
 
-WRB	wh-abverb	where, when
+> WRB	wh-abverb	where, when
 
 
 ### NE Type and Examples
 
-ORGANIZATION - Georgia-Pacific Corp., WHO
+> ORGANIZATION - Georgia-Pacific Corp., WHO
 
-PERSON - Eddy Bonte, President Obama
+> PERSON - Eddy Bonte, President Obama
 
-LOCATION - Murray River, Mount Everest
+> LOCATION - Murray River, Mount Everest
 
-DATE - June, 2008-06-29
+> DATE - June, 2008-06-29
 
-TIME - two fifty a m, 1:30 p.m.
+> TIME - two fifty a m, 1:30 p.m.
 
-MONEY - 175 million Canadian Dollars, GBP 10.40
+> MONEY - 175 million Canadian Dollars, GBP 10.40
 
-PERCENT - twenty pct, 18.75 %
+> PERCENT - twenty pct, 18.75 %
 
-FACILITY - Washington Monument, Stonehenge
+> FACILITY - Washington Monument, Stonehenge
 
-GPE - South East Asia, Midlothian
+> GPE - South East Asia, Midlothian
