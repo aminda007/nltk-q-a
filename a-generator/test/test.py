@@ -106,3 +106,13 @@ print(lemmatizer.lemmatize("better", pos="a"))
 print(lemmatizer.lemmatize("best", pos="a"))
 print(lemmatizer.lemmatize("run"))
 print(lemmatizer.lemmatize("run",'v'))
+
+from nltk.corpus import gutenberg
+
+# sample text
+sample = gutenberg.raw("bible-kjv.txt")
+
+tok = sent_tokenize(sample)
+
+for x in range(10):
+    print(tok[x])

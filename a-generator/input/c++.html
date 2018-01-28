@@ -1,0 +1,2029 @@
+
+<!--
+<script type="text/JavaScript">
+function validateForm()
+{
+var x=document.forms["user-login"]["name"].value;
+var y=document.forms["user-login"]["pass"].value;
+if (x==null || x=="")
+  {
+   if (y==null || y=="")
+   {
+  alert("User Name & Password must be filled out");
+  return false;
+  }}
+ else if (y==null || y=="")
+  {
+  alert("Password must be filled out");
+  return false;
+  }
+
+}
+</script>-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="http://p3.placement.freshersworld.com/power-preparation/sites/all/themes/fw/common/styles/footer.css?" type="text/css">
+					<meta property="og:title" content="C++ Interview Questions-Interview Questions and Answers-21549"/>
+		<title>C++ Interview Questions-Interview Questions and Answers-21549</title>
+		<meta name="keywords" content="Interview,C++ Interview Questions,Interview question and answers,Interview questions,Interview preparation,Interview puzzles"/>
+					<meta name="description" content="C++ Interview Questions.Click here to find Interview questions,Interview preparation ,Interview puzzles etc" />
+
+		<!--   <meta property="og:type" content="placement papers,placement preparation"/>-->
+		<meta property="og:url" content="http://p3.placement.freshersworld.com"/>
+		<meta property="og:image" content="http://p3.placement.freshersworld.com/power-preparation/images/logo.gif"/>
+		<meta property="og:site_name" content="Power Placement Preparation"/>
+		<meta property="og:description"	content="Complete placement preparation for major companies tests and interviews,Aptitude questions and answers, technical, interview tips, practice tests, assessment tests and general knowledge questions and answers"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="INDEX,FOLLOW" />
+		<meta name="application-name" content="Freshersworld.com The No 1 Job site for freshers in India"/>
+		<meta name="copyright" content="2011 freshersworld.com" />
+		<meta name="content-language" content="EN" />
+		<meta name="author" content="www.freshersworld.com" />
+		<meta name="distribution" content="GLOBAL" />
+		<meta name="robots" content="ALL" />
+		<meta name="revisit-after" content="1 day" />
+		<meta name="classification" content="Placement preparation aptitude questions answers interview prep for IT,Non IT companies and Banks" />
+		<meta name="google-site-verification" content="XJ38GhuP9waU2AG6hJMkJ1UmJbow8YIQVKv7F3OWiWU" />
+		<link rel="canonical" href="http://p3.placement.freshersworld.com/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+
+				<!--
+-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="C++ Interview Questions" />
+<meta property="og:description" content="1. &amp;nbsp;What is C++?
+
+Released in 1985, C++ is an object-oriented programming language created by Bjarne Stroustrup. C++ maintains almost all aspects of the C language, while simplifying memory man" />
+<meta property="og:url" content="http://p3.placement.freshersworld.com/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549" />
+<meta property="og:site_name" content="Power Placement Preparation" />
+<link rel="shortcut icon" href="/power-preparation/sites/default/files/fw_favicon.gif" type="image/x-icon" />
+<link rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
+<meta property="og:site_name" content="placement papers" />
+<meta property="og:title" content="C++ Interview Questions" />
+<meta name="description" content="Complete placement preparation for major company’s tests and interviews.  Aptitude questions and answers, technical, interview tips; practice tests and assessment tests" />
+<meta name="abstract" content="Placement preparation aptitude questions answers interview prep for IT,Non IT companies and Banks" />
+<meta name="keywords" content="sample,campus,interview,latest,practice,previous,model,question,answer,solution,explanation,collection,aptitude,technical,hr,recruitment,TCS,Infosys,CTS,HCL,Syntel,WIPRO,2012,2013,free,tip,placement,preparation,questions,answers,exam,solutions,examples,tests,paper,company,assessment,training,mock,reasoning,verbal" />
+<meta name="dcterms.date" content="2013-04-10T00:00:00Z" />
+<meta name="copyright" content="power placement preparation" />
+<meta property="og:country-name" content="India" />
+<meta property="og:type" content="website" />
+<link rel="canonical" href="http://placement.freshersworld.com/technical-interview-preparation/c-plus-interview-questions-21549" />
+<meta property="og:url" content="http://placement.freshersworld.com/technical-interview-preparation/c-plus-interview-questions-21549" />
+<meta name="revisit-after" content="1 day" />
+<meta name="robots" content="index, follow" />
+<meta property="fb:admins" content="https://www.facebook.com/freshersworld" />
+		<!--<title>Technical interview -C++ Interview Questions-21549</title>-->
+		<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/custom/form_overrides/hide_input_format.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/custom/form_overrides/hide_others_textbox.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/modules/aggregator/aggregator.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/modules/node/node.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/modules/system/defaults.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/modules/system/system.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/modules/system/system-menus.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/modules/user/user.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/cck/theme/content-module.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/ckeditor/ckeditor.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/colorbox/styles/default/colorbox_default_style.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/ctools/css/ctools.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/date/date.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/filefield/filefield.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/fivestar/css/fivestar.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/fivestar/widgets/small/small.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/mollom/mollom.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/question_answer/question_answer.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/quiz/quiz.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/rate/rate.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/thickbox/thickbox.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/thickbox/thickbox_ie.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/views/css/views.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/taxonomy_super_select/taxonomy_super_select.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/service_links/css/service_links_fisheye.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/modules/quiz_ei/questions_import/questions_import.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/themes/fw/style.css?M" />
+<link type="text/css" rel="stylesheet" media="all" href="/power-preparation/sites/all/themes/fw/custom.css?M" />
+		<script type="text/javascript" src="/power-preparation/sites/all/modules/jquery_update/replace/jquery.min.js?M"></script>
+<script type="text/javascript" src="/power-preparation/misc/drupal.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/libraries/colorbox/colorbox/jquery.colorbox-min.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/colorbox/js/colorbox.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/colorbox/styles/default/colorbox_default_style.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/colorbox/js/colorbox_load.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/colorbox/js/colorbox_inline.js?M"></script>
+<script type="text/javascript" defer="defer" src="/power-preparation/sites/all/modules/custom/form_overrides/hide_others_textbox.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/fivestar/js/fivestar.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/google_analytics/googleanalytics.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/poormanscron/poormanscron.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/power/drop_down.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/quiz_ei/questions_import/questions_import.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/thickbox/thickbox.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/service_links/js/facebook_like.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/service_links/js/interface.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/service_links/js/service_links_fisheye.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/ajax/jquery/jquery.a_form.packed.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/modules/ajax/ajax.js?M"></script>
+<script type="text/javascript" src="/power-preparation/sites/all/themes/fw/script.js?M"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/power-preparation/", "colorbox": { "transition": "elastic", "speed": 350, "opacity": "0.85", "slideshow": false, "slideshowAuto": false, "slideshowSpeed": 2500, "slideshowStart": "", "slideshowStop": "", "current": "{current} of {total}", "previous": "« Prev", "next": "Next »", "close": "Close", "overlayClose": true, "maxWidth": "100%", "maxHeight": "100%" }, "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "cron": { "basePath": "/power-preparation/poormanscron", "runNext": 1517090807 }, "thickbox": { "close": "Close", "next": "Next \x3e", "prev": "\x3c Prev", "esc_key": "or Esc Key", "next_close": "Next / Close on last", "image_count": "Image !current of !total" }, "ws_fl": { "width": 100, "height": "21" } });
+//--><!]]>
+</script>
+		<!--[if IE 6]><link rel="stylesheet" href="/power-preparation/sites/all/themes/fw/style.ie6.css" type="text/css" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/power-preparation/sites/all/themes/fw/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 8]><link rel="stylesheet" href="/power-preparation/sites/all/themes/fw/style.ie8.css" type="text/css" media="screen" /><![endif]-->
+		<script type="text/javascript"></script>
+		<!-- Google Adsense Code -->
+		<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+		<script type='text/javascript'>
+			GS_googleAddAdSenseService("ca-pub-7447756575732232");
+
+			GS_googleEnableAllServices();
+
+		</script>
+		<script type='text/javascript'>
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_P3_Home_Premium");
+
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_P3_Home_Skyscraper");
+
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_Placement_Inner_Bottom_Medium_Rectangle1");
+
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_Placement_Inner_Bottom_Medium_Rectangle2");
+
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_P3_Inner_Premium");
+
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_P3_Inner_Skyscraper");
+
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_P3_Home_Skyscraper_2");
+
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_Placement_Bottom");
+
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_Placement_Home_Medium_Rectangle");
+
+            GA_googleAddSlot("ca-pub-7447756575732232", "FW_Placement_Inner_Medium_Rectangle");
+
+            GA_googleAddSlot("ca-pub-7447756575732232", "FW_Placement_Home_Skyscraper");
+
+            GA_googleAddSlot("ca-pub-7447756575732232", "FW_P3_Inner_Medium_Rectangle");
+
+            GA_googleAddSlot("ca-pub-7447756575732232", "FW_P3_Inner_Medium_Rectangle2");
+
+			GA_googleAddSlot("ca-pub-7447756575732232", "FW_P3_Inner_Top_Big");
+
+			// GA_googleAddSlot("ca-pub-7447756575732232", "FW_Footer_Medium_Rectangle"); //Removed from footer
+		</script>
+		<script type='text/javascript'>
+			GA_googleFetchAds();
+
+		</script>
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-400510-1']);
+			_gaq.push(['_setDomainName', 'freshersworld.com']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+		<script language="javascript">
+			function confirm_sub() {
+				if(document.getElementById("institute").value != "Other")
+					return true;
+				else if(document.getElementById("institute").value == "Other") {
+					if(document.getElementById("oi").style.visibility == "visible" && document.getElementById("oi").value == "") {
+						document.getElementById("msg").style.visibility = "visible";
+						document.getElementById("oi").focus();
+						return false;
+					} else if(document.getElementById("oi").style.visibility != "visible" || document.getElementById("oi").value == "") {
+						document.getElementById("oi").style.visibility = "visible";
+						document.getElementById("msg").style.visibility = "visible";
+						document.getElementById("oi").focus();
+						return false;
+
+					} else if(document.getElementById("oi").value != "")
+						return true;
+
+				}
+
+			}
+
+			function institute_value(oi) {
+				if(oi == "Other") {
+					document.getElementById("oi").style.visibility = "visible";
+					document.getElementById("oi").focus();
+				} else {
+					document.getElementById("oi").style.visibility = "hidden";
+					document.getElementById("msg").style.visibility = "hidden";
+				}
+			}
+		</script>
+		<script language="javascript">
+			function EATfv() {
+				document.getElementById('fv').style.visibility = 'visible';
+				document.getElementById('iv').style.visibility = 'hidden';
+			}
+
+			function EATiv() {
+				document.getElementById('fv').style.visibility = 'hidden';
+				document.getElementById('iv').style.visibility = 'visible';
+			}
+		</script>
+		<!--<script language="javascript">
+		function quiz_clone_check_values(f_value,f_name){
+		alert("value : "+f_value+" name : "+f_name)
+		if(f_value==""){
+		alert("field is empty")
+		document.getElementById(f_name).focus();
+		}
+		else{
+		if(isNaN(f_value)){
+		alert("Invalid")
+		document.getElementById(f_name).value="";
+		document.getElementById(f_name).focus();
+		}
+		}
+		}
+		</script>-->
+		<!--
+		if the user is drupal root , then bellow scroll popup scrip will add
+		if you want to change this for unpaid users change the condition for the unpaid users
+		-->
+				<!--
+		<script>
+		$(document).ready(function(){
+		$("div#flyoutWidget").hide();
+
+		// Triggers whenever the window is scrolled
+		$(window).scroll(function () {
+		var D = 0, y = 0, height = 0;
+
+		console.log(window.pageYOffset);
+		height = window.pageYOffset;
+		if (height > 300 ) {
+		$("div#flyoutWidget").css("right",'0');
+		$("div#flyoutWidget").show();
+		} else {
+		$("div#flyoutWidget").hide();
+		};
+		});
+		});
+
+		</script>
+		<style>
+		div#flyoutWidget {
+		background-color: #FFFFFF;
+		border: 2px solid #800000;
+		bottom: 0;
+		display: block;
+		padding: 10px;
+		position: fixed;
+		right: -359px;
+		width: 350px;
+		color: #000000;
+		/*height:50px;*/
+		z-index: 9997;
+		}
+		</style>
+		-->
+				<script type="text/javascript">
+
+var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function() {
+		var gads = document.createElement('script');
+		gads.async = true;
+		gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') +
+		'//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+	googletag.cmd.push(function() {
+
+		googletag.defineSlot('/1027569/FW_Inner_Top_Leaderboard', [728, 90], 'div-gpt-ad-1399966872806-0').addService(googletag.pubads());
+
+		googletag.pubads().enableSingleRequest();
+		googletag.enableServices();
+	});
+</script>
+</head>
+		<body id="custom" ondragstart="return false" onselectstart="return false" oncontextmenu="return false;">
+      <!--<body id="custom">-->
+		<div id="art-main">
+			<div class="art-header">
+				<!--<link type="text/css" rel="stylesheet" href="http://www.freshersworld.com/common/styles/fwmain.css" />-->
+<style>
+.wrapper {
+width: 100%;
+height: 100%;
+}
+.wrapper .header {
+float: left;
+width: 100%;
+height: 129px;
+background-image: url(http://s3.amazonaws.com/fws3/static/fwmain/images/header_bgp3.png);
+background-repeat: repeat-x;
+}
+.header .header_content {
+width: 1000px;
+margin: auto;
+}
+.header_content .logo {
+float: left;
+margin-top: 11px;
+}
+/*---------menu section-----------*/
+#menu .home img {
+float: left;
+margin-top: 5px;
+margin-left: -14px;
+}
+.main_menu_home_seperator {
+    background-image: url("https://s3.amazonaws.com/fws3/static/common/images/navigation_divide.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 31px;
+    margin-left:-8px;
+    margin-top: 4px;
+    width: 2px;
+}
+#menu {
+	list-style:none;
+
+	width: 1040px;
+	margin:0px auto 0px auto;
+	height:43px;
+	margin-top: -3px;
+    padding: 0px 20px 0px 10px;
+	z-index: 9999;
+	position:relative;
+
+
+	/* Rounded Corners */
+
+	/*-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;*/
+
+	/* Background color and gradients */
+
+
+	/* Borders */
+
+	/*border: 1px solid #002232;*/
+
+	-moz-box-shadow:inset 0px 0px 1px #edf9ff;
+	-webkit-box-shadow:inset 0px 0px 1px #edf9ff;
+	box-shadow:inset 0px 0px 1px #edf9ff;
+}
+
+#menu li {
+	float:left;
+	display:block;
+	text-align:center;
+	position:relative;
+	padding: 4px 10px 4px 10px;
+	margin-right:5px;
+	margin-top:7px;
+	border:none;
+}
+
+#menu li.prdct {
+	margin-right: 0px !important;
+float: right !important;
+margin-top: 4px !important;
+background-image: none !important;
+}
+#menu li.prdct:hover {
+	border: none !important;
+	margin-right: 0px !important;
+float: right !important;
+margin-top: 4px !important;
+background-image: none !important;
+}
+#menu li:hover {
+	border: 1px solid #777777;
+	padding: 4px 9px 4px 9px;
+	background-image: url('http://www.freshersworld.com/common/images/navigation_hover_bg.png');
+    background-repeat: repeat-x;
+
+}
+#menu li a {
+	 color: #000000;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    outline: 0 none;
+    text-decoration: none;
+     line-height: 20px;
+    /*text-shadow: 1px 1px 1px #000000;*/
+
+    }
+
+#menu li.prdct a {
+	float: right;
+color: white !important;
+font-size: 18px;
+font-family: arial;
+padding: 3px 0px 0 12px;
+background-image: url('http://static.freshersworld.com/p3/images/buy_now_button.png');
+background-repeat: no-repeat !important;
+width: 109px;
+height: 31px;
+    }
+
+ #menu li.prdct:hover a {
+	float: right;
+color: white !important;
+font-size: 18px;
+font-family: arial;
+padding: 3px 0px 0 12px;
+background-image: url('http://static.freshersworld.com/p3/images/buy_now_button.png');
+background-repeat: no-repeat !important;
+width: 109px;
+height: 31px;
+
+    }
+#menu li:hover a {
+	color:#ffffff;
+	/*text-shadow: 1px 1px 1px #ffffff;*/
+
+
+}
+#menu li .drop {
+	padding-right:21px;
+	/*background:url("https://s3.amazonaws.com/fws3/static/fwmain/images/drop.png") no-repeat right 8px;*/
+	}
+#menu li:hover .drop {
+	background-color: #548ecc;
+	background:url("https://s3.amazonaws.com/fws3/static/fwmain/images/drop.png") no-repeat right 7px;
+	color: #269BC6 !important;
+}
+
+.dropdown_1column,
+.dropdown_2columns,
+.dropdown_3columns,
+.dropdown_4columns,
+.dropdown_5columns {
+	margin:3px auto;
+	float:left;
+	position:absolute;
+	left:-999em; /* Hides the drop down */
+	text-align:left;
+	padding:10px 5px 10px 5px;
+	border:2px solid #224f8f;
+
+	/* Gradient background */
+	background:#ffffff;
+	background: -moz-linear-gradient(top, #ffffff, #ffffff);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#ffffff));
+
+	/* Rounded Corners
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+	*/
+}
+
+.dropdown_1column {width: 140px;}
+.dropdown_2columns {width: 280px;}
+.dropdown_3columns {width: 420px;}
+.dropdown_4columns {width: 663px;}
+.dropdown_5columns {width: 663px;height:auto;}
+
+#menu li:hover .dropdown_1column,
+#menu li:hover .dropdown_2columns,
+#menu li:hover .dropdown_3columns,
+#menu li:hover .dropdown_4columns,
+#menu li:hover .dropdown_5columns {
+	left:-1px;
+	top:auto;
+}
+
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.col_7 {
+	float: left;
+	clear:both;
+	padding:0px 5px 5px 5px;
+	background-color:#e6e6e6;
+	height:15px;
+	width:773px;;
+	border:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	margin-left:10px;
+}
+.col_8 {
+	float: left;
+	clear:both;
+	padding:5px 5px 5px 5px;
+	background-color:#e6e6e6;
+	height:20px;
+	width:780px;;
+	border:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	margin-left:5px;
+}
+.col_1 {width:211px;}
+.col_2 {width:310px;}
+.col_3 {width:350px;}
+.col_4 {width:172px;}
+.col_5 {width:690px;}
+.col_1 ul li a{color:#000000;}
+.col_1 ul li.jobs_li a{ color: #33559B !important;font-family: Verdana,Geneva,sans-serif !important;font-size: 12px !important;font-weight: bold; margin: 5px 0;}
+#menu .menu_right {
+	float:left;
+	clear:none;
+	width:300px;
+}
+#menu li ul li a{
+	color:#000000;
+}
+#menu li .align_right {
+	/* Rounded Corners
+	-moz-border-radius: 5px 0px 5px 5px;
+    -webkit-border-radius: 5px 0px 5px 5px;
+    border-radius: 5px 0px 5px 5px;
+	*/
+}
+
+#menu li:hover .align_right {
+	left:auto;
+	right:-1px;
+	top:auto;
+}
+
+#menu p, #menu h2, #menu h3, #menu ul li {
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:21px;
+	font-size:12px;
+	text-align:left;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+#menu h2 {
+	font-size:21px;
+	font-weight:400;
+	letter-spacing:-1px;
+	margin:7px 0 14px 0;
+	padding-bottom:14px;
+	border-bottom:1px solid #666666;
+}
+#menu h3 {
+	background: none repeat scroll 0 0 #EEF4FA;
+    color: #33559B;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-bottom: 5px;
+    text-indent: 5px;border:none;
+    width: 96%;
+}
+#menu p {
+	line-height:18px;
+	margin:0 0 10px 0;
+}
+
+#menu li:hover div a {
+	font-size:12px;
+	color:#015b86;
+	display:inline;
+	position:relative;
+}
+#menu li:hover div a:hover {
+	color:#029feb;
+	text-decoration:underline;
+}
+
+
+.strong {
+	font-weight:bold;
+}
+.italic {
+	font-style:italic;
+}
+
+.imgshadow { /* Better style on light background */
+	background:#FFFFFF;
+	padding:4px;
+	border:1px solid #777777;
+	margin-top:5px;
+	-moz-box-shadow:0px 0px 5px #666666;
+	-webkit-box-shadow:0px 0px 5px #666666;
+	box-shadow:0px 0px 5px #666666;
+}
+.img_left { /* Image sticks to the left */
+	width:auto;
+	float:left;
+	margin:5px 15px 5px 5px;
+}
+
+#menu li .black_box {
+	background-color:#333333;
+	color: #eeeeee;
+	text-shadow: 1px 1px 1px #000;
+	padding:4px 6px 4px 6px;
+
+	/* Rounded Corners */
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+	/* Shadow */
+	-webkit-box-shadow:inset 0 0 3px #000000;
+	-moz-box-shadow:inset 0 0 3px #000000;
+	box-shadow:inset 0 0 3px #000000;
+}
+
+#menu li ul {
+	list-style:none;
+	padding:0;
+	margin:0 0 12px 0;
+}
+#menu li ul li {
+	font-size:12px;
+	line-height:20px;
+	position:relative;
+	text-shadow: 1px 1px 1px #ffffff;
+	padding:0;
+	margin:0;
+	float:none;
+	text-align:left;
+	width:auto;
+}
+#menu li ul li:hover {
+	background:none;
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+#menu li .greybox li {
+	background:#F4F4F4;
+	border:1px solid #bbbbbb;
+	margin:0px 0px 4px 0px;
+	padding:4px 6px 4px 6px;
+	width:116px;
+
+	/* Rounded Corners */
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+#menu li .greybox li:hover {
+	background:#ffffff;
+	border:1px solid #aaaaaa;
+	padding:4px 6px 4px 6px;
+	margin:0px 0px 4px 0px;
+}
+
+
+
+</style>
+
+<div class="wrapper">
+<div class="header">
+<div class="header_content">
+<div class="logo"><a href="http://www.freshersworld.com"><img src="http://static.freshersworld.com/images/freshersworld.png" alt="freshersworld logo"  border="0" /></a>
+</div>
+<div style="margin-top:-10px;float:right;">
+					<!-- FW_Inner_Top_Leaderboard -->
+					<div id='div-gpt-ad-1399966872806-0' style='width:728px; height:90px;'>
+                    </div>
+			</div>
+<div style="width:1003px; height:40px;margin-top: 15px;">
+<div style="width: auto; height: 37px; margin-top:0px; float:left;clear: both;">
+
+<ul id="menu">
+<a href="http://www.freshersworld.com" class="home"><img src="http://static.freshersworld.com/images/home.png" alt="freshersworld home" width="29" height="29" border="0" /></a>
+    <span class="main_menu_home_seperator" style=" margin-left: 10px;"></span>
+    <li><a href="http://placement.freshersworld.com/placement-papers"  class="drop" style="background: none;font-weight: bold;height:23px;">Placement Papers</a>
+        <!-- End 4 columns container -->
+
+    </li><!-- End Home Item -->
+<span class="main_menu_home_seperator" style="margin-left:-8px;"></span>
+    <li><a href="http://placement.freshersworld.com/aptitude-questions-and-answers" class="drop" style="font-weight: bold;height:23px;">Aptitude Preparation</a><!-- Begin 5 columns Item -->
+
+    <!-- Begin 5 columns container -->
+
+            <!-- End 5 columns container -->
+
+    </li><!-- End 5 columns Item -->
+<span class="main_menu_home_seperator" style="margin-left:-8px;"></span>
+    <li><a href="http://placement.freshersworld.com/interview-questions-and-answers" class="drop" style="font-weight: bold;height:23px;">Interview Preparation</a><!-- Begin 4 columns Item -->
+
+
+    </li>
+    <span class="main_menu_home_seperator"></span>
+    <li><a href="http://placement.freshersworld.com/general-knowledge-questions-and-answers" class="drop" style="font-weight: bold;height:23px;">General Knowledge</a><!-- Begin 4 columns Item -->
+
+                </li>
+     <span class="main_menu_home_seperator"></span>
+    <li><a href="http://p3.placement.freshersworld.com/power-preparation/online-tests"  class="drop" style="background: none;font-weight: bold;height:23px;">Online Test</a></li>
+    <span class="main_menu_home_seperator"></span>
+
+    <li class="prdct"><a class="p3_buynow_title" href="http://p3.placement.freshersworld.com/power-preparation/product_list" title="buynow">Buy Now</a></li>
+       <!-- End 4 columns Item -->
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+<!--....... Header End .......-->
+</div>
+<script type='text/javascript'>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1399966872806-0'); });
+</script>
+			<!--	<div class="art-header-jpeg">
+										<div id="logo">
+						<a href="http://www.freshersworld.com" title="Home"><img src="/power-preparation/sites/default/files/pp_logo.png" alt="Home" /></a>
+					</div>
+										<!--author annie - 1-10-2011-->
+			      <!--<div class="topbar">
+											</div>
+					<div class="login">
+											</div>
+					<!--End-->
+				<!--						<!--author annie - 1-10-2011-->
+				<!--	<div class="submenu">
+											</div>
+					<!--End-->
+			<!--	</div>-->
+			</div>
+   			    <div class="art-sheet">
+				<div class="art-sheet-tl"></div>
+				<div class="art-sheet-tr"></div>
+				<div class="art-sheet-bl"></div>
+				<div class="art-sheet-br"></div>
+				<div class="art-sheet-tc"></div>
+				<div class="art-sheet-bc"></div>
+				<div class="art-sheet-cl"></div>
+				<div class="art-sheet-cr"></div>
+				<div class="art-sheet-cc"></div>
+				<div class="art-sheet-body">
+					<div id="content_breadcrumb" ><div class="breadcrumb"><a href="/power-preparation/">P3Home</a> > <a href="http://p3.placement.freshersworld.com/power-preparation/category/tid/820">Interview Preparation</a> > <a href="http://p3.placement.freshersworld.com/power-preparation/category/tid/841">Technical Interview Prep</a> > <a href="http://p3.placement.freshersworld.com/power-preparation/category/nid/21548">C++ Interview Questions | Free</a> > C++ Interview Questions</div></div>															<div class="art-content-layout">
+						<div class="art-content-layout-row">
+														<div class="art-layout-cell art-content-sidebar1">
+
+								<div class="CustomDescription" style="float: left;">
+																	</div>
+
+
+
+																												<style type="text/css">
+.nextprev a {
+	font-size:14px;
+	float:left;
+	color:#999999;
+	text-decoration:none;
+
+}
+.nextprev a:hover {
+	color: #59C3DF;
+	text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+#custom div.art-layout-cell.art-sidebar1 {
+	display: none;
+}
+div.art-content-layout-row {
+	display: block;
+}
+div.art-content-layout div.art-layout-cell{
+	display: inherit;
+}
+#custom div.art-layout-cell.art-content {
+width: 100%;
+}
+
+}
+</style>
+<script language="javascript" type="text/javascript">
+
+	function popitup(url) {
+	newwindow=window.open(url,'name','height=362,width=615');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+</script>
+<div id="node-21549" class="node promote">
+<div class="art-post">
+<div class="art-post-body">
+<div class="art-post-inner">
+<h2 class="art-postheader"><!-- Author annie;Date-5-10-2011; commented the image!--><!--<img src="/images/postheadericon.png" width="23" height="25" alt="" />-->
+<!--Maya ; 19.10.11-->
+</h2>
+<div class="art-postheadericons art-metadata-icons">
+</div>
+<div class="art-postcontent">
+    <!-- article-content -->
+<div id="content_main">
+<div id="sub_content">
+<div id="topbar_content"><h1 style='padding-left: 10px;font-size:22px;padding-top: 3px;float: left;color: #269bc6;margin: 0px;'>C++ Interview Questions</h1>
+<div id="service_link_block" style="padding-top: 4px;"><div class="art-block clear-block block block-service_links" id="block-service_links-service_links_fisheye">
+    <div class="art-block-body">
+
+	<div class="art-blockcontent content">
+	    <div class="art-blockcontent-tl"></div>
+	    <div class="art-blockcontent-tr"></div>
+	    <div class="art-blockcontent-bl"></div>
+	    <div class="art-blockcontent-br"></div>
+	    <div class="art-blockcontent-tc"></div>
+	    <div class="art-blockcontent-bc"></div>
+	    <div class="art-blockcontent-cl"></div>
+	    <div class="art-blockcontent-cr"></div>
+	    <div class="art-blockcontent-cc"></div>
+	    <div class="art-blockcontent-body">
+	<!-- block-content -->
+
+		<div class="fisheye"><div class="fisheyeContainer">
+<a href="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fp3.placement.freshersworld.com%2Fpower-preparation%2Ftechnical-interview-preparation%2Fc-plus-interview-questions-21549&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100&amp;height=21&amp;font=&amp;locale=" title="I Like it" class="service-links-facebook-like" rel="nofollow" target="_blank"><span style="display:none;">Facebook Like</span></a>
+</div></div>
+	<!-- /block-content -->
+
+	    </div>
+	</div>
+
+
+    </div>
+</div>
+</div>
+<span style="padding-right: 5px;float: right;margin-top: 5px;">
+<span >Share</span>
+<img src="http://static.freshersworld.com/images/fb.png" width="16px" height="16px" title="Share this on Facebook" style="cursor: pointer;"onclick="window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent('http://p3.placement.freshersworld.com/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549'), 'fshare', 'scrollbars=1,width=700,height=400');"/>
+ <a href="https://plus.google.com/share?url=http://p3.placement.freshersworld.com/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
+  src="http://static.freshersworld.com/images/g+.png" alt="Share on Google+" width="16px" height="16px" title="Share on Google+"/></a>
+<a href="#" onclick="return popitup('http://www.linkedin.com/shareArticle?mini=true&url=http://p3.placement.freshersworld.com/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549')">  <img src="http://static.freshersworld.com/images/linkedin.png" alt="Share on Linked IN" width="16px" height="16px" style="cursor: pointer;" title="Share on Linked In"/></a>
+
+ <a href="https://twitter.com/intent/tweet?original_referer=http://p3.placement.freshersworld.com/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549&text=&tw_p=tweetbutton&url=http://p3.placement.freshersworld.com/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
+  src="http://static.freshersworld.com/images/twitter.gif" alt="Share on Google+" width="16px" height="16px" title="Share on Twitter"/></a>
+</span>
+<div class='tttt' style='padding-top: 2px;clear: both;float: left;padding-left: 10px;'><span >138098 views, 844 found it useful<form action="/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549"  accept-charset="UTF-8" method="post" id="fivestar-form-node-21549-1" class="fivestar-widget">
+<div><div class="fivestar-form-vote-21549 clear-block"><input type="hidden" name="content_type" id="edit-content-type-1" value="node"  />
+<input type="hidden" name="content_id" id="edit-content-id-1" value="21549"  />
+<div class="fivestar-form-item  fivestar-average-stars fivestar-labels-hover"><div class="form-item" id="edit-vote-2-wrapper">
+ <input type="hidden" name="vote_count" id="edit-vote-count-1" value="242"  />
+<input type="hidden" name="vote_average" id="edit-vote-average-1" value="76.6116"  />
+<input type="hidden" name="auto_submit_path" id="edit-auto-submit-path-1" value="/power-preparation/fivestar/vote/node/21549/vote"  class="fivestar-path" />
+<select name="vote" class="form-select" id="edit-vote-3" ><option value="-">Select rating</option><option value="20">Poor</option><option value="40">Okay</option><option value="60">Good</option><option value="80" selected="selected">Great</option><option value="100">Awesome</option></select><input type="hidden" name="auto_submit_token" id="edit-auto-submit-token-1" value="57b82d1bb0305c781fbfcbc13895048e"  class="fivestar-token" />
+
+ <div class="description"><div class="fivestar-summary fivestar-feedback-enabled">&nbsp;</div></div>
+</div>
+</div><input type="hidden" name="destination" id="edit-destination-1" value="node/21549"  />
+<span class="art-button-wrapper"><span class="l"></span><span class="r"></span><input type="submit" name="op" id="edit-fivestar-submit-1" value="Rate"  class="form-submit fivestar-submit art-button"/></span><input type="hidden" name="form_build_id" id="form-e3a213c5f2bd58aa59cb813a41864bd9" value="form-e3a213c5f2bd58aa59cb813a41864bd9"  />
+<input type="hidden" name="form_id" id="edit-fivestar-form-node-21549-1" value="fivestar_form_node_21549"  />
+</div>
+</div></form>
+</span></div><div style="color: #000;font-size:11px;margin: 0px;padding: 0px 12px;float: right;">Learn and practice Technical Interview Prep,  Interview Preparation,   C++ Interview Questions | Free questions and answers with explanation for interview,placement test,online test,competitive examination and entrance test</div>
+
+</div>
+
+<div class="art-article">
+<!--anu for testing */-->
+<div class='p3_content'><div class="service-links"><ul class="links"><li class="service-links-facebook-like first last"><a href="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fp3.placement.freshersworld.com%2Fpower-preparation%2Ftechnical-interview-preparation%2Fc-plus-interview-questions-21549&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100&amp;height=21&amp;font=&amp;locale=" title="I Like it" class="service-links-facebook-like" rel="nofollow" target="_blank"><span style="display:none;">Facebook Like</span></a></li>
+</ul></div><div class="field field-type-text field-field-data">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p class="MsoNormal"><strong>1. <span style="mso-spacerun:yes">&nbsp;</span>What is C++?</strong></p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">Released in 1985, C++ is an object-oriented programming language created by Bjarne Stroustrup. C++ maintains almost all aspects of the C language, while simplifying memory management and adding several features - including a new datatype known as a class (you will learn more about these later) - to allow object-oriented programming. C++ maintains the features of C which allowed for low-level memory access but also gives the programmer new tools to simplify memory management. <o:p></o:p><br />
+	C++ used for:<o:p></o:p><br />
+	C++ is a powerful general-purpose programming language. It can be used to create small programs or large applications. It can be used to make CGI scripts or console-only DOS programs. C++ allows you to create programs to do almost anything you need to do. The creator of C++, Bjarne Stroustrup, has put together a partial list of applications written in C++.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>2.<span style="mso-spacerun:yes">&nbsp;</span>How do you find out if a linked-list has an end? (i.e. the list is not a cycle) </strong><o:p></o:p><br />
+	You can find out by using 2 pointers. One of them goes 2 nodes each time. The second one goes at 1 nodes each time. If there is a cycle, the one that goes 2 nodes each time will eventually meet the one that goes slower. If that is the case, then you will know the linked-list is a cycle.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>3.<span style="mso-spacerun:yes"> </span>What is the difference between realloc() and free()? </strong><o:p></o:p><br />
+	The free subroutine frees a block of memory previously allocated by the malloc subroutine. Undefined results occur if the Pointer parameter is not a valid pointer. If the Pointer parameter is a null value, no action will occur. The realloc subroutine changes the size of the block of memory pointed to by the Pointer parameter to the number of bytes specified by the Size parameter and returns a new pointer to the block. The pointer specified by the Pointer parameter must have been created with the malloc, calloc, or realloc subroutines and not been deallocated with the free or realloc subroutines. Undefined results occur if the Pointer parameter is not a valid pointer.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>4.<span style="mso-spacerun:yes">&nbsp; </span>Base class has some virtual method and derived class has a method with the same name. If we initialize the base class pointer with derived object, calling of that virtual method will result in which method being called?<span style="mso-spacerun:yes">&nbsp; </span></strong><o:p></o:p></p>
+<p class="MsoNormal">a. Base method <o:p></o:p><br />
+	b. Derived method<o:p></o:p><br />
+	Ans. B</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>5.<span style="mso-spacerun:yes">&nbsp;</span>What is function overloading and operator overloading?</strong><o:p></o:p><br />
+	Function overloading: C++ enables several functions of the same name to be defined, as long as these functions have different sets of parameters (at least as far as their types are concerned). This capability is called function overloading. When an overloaded function is called, the C++ compiler selects the proper function by examining the number, types and order of the arguments in the call. Function overloading is commonly used to create several functions of the same name that perform similar tasks but on different data types.</p>
+<p class="MsoNormal"><o:p></o:p><br />
+	Operator overloading allows existing C++ operators to be redefined so that they work on objects of user-defined classes. Overloaded operators are syntactic sugar for equivalent function calls. They form a pleasant facade that doesn&#39;t add anything fundamental to the language (but they can improve understandability and reduce maintenance costs).</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal"><strong>6.<span style="mso-spacerun:yes">&nbsp; </span>What are the advantages of inheritance? </strong><o:p></o:p><br />
+	It permits code reusability. Reusability saves time in program development. It encourages the reuse of proven and debugged high-quality software, thus reducing problem after a system becomes functional.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>7.What is the difference between declaration and definition? </strong><o:p></o:p><br />
+	The declaration tells the compiler that at some later point we plan to present the definition of this declaration.<o:p></o:p><br />
+	E.g.: void stars () //function declaration <o:p></o:p><br />
+	The definition contains the actual implementation.<o:p></o:p><br />
+	E.g.: void stars () // declarator<o:p></o:p><br />
+	{<o:p></o:p><br />
+	for(int j=10; j &gt; =0; j--) //function body<o:p></o:p><br />
+	cout &lt;&lt; *;<o:p></o:p><br />
+	cout &lt;&lt; endl;&nbsp;<br />
+	}</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>8.<span style="mso-spacerun:yes">&nbsp; </span>How do you write a function that can reverse a linked-list? </strong><o:p></o:p></p>
+<p class="MsoNormal">void reverselist(void)<o:p></o:p><br />
+	{<o:p></o:p><br />
+	if(head==0)<o:p></o:p><br />
+	return;<o:p></o:p><br />
+	if(head-&gt;next==0)<o:p></o:p><br />
+	return;<o:p></o:p><br />
+	if(head-&gt;next==tail)<o:p></o:p><br />
+	{<o:p></o:p><br />
+	head-&gt;next = 0;<o:p></o:p><br />
+	tail-&gt;next = head;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	else<o:p></o:p><br />
+	{<o:p></o:p><br />
+	node* pre = head;<o:p></o:p><br />
+	node* cur = head-&gt;next;<o:p></o:p><br />
+	node* curnext = cur-&gt;next;<o:p></o:p><br />
+	head-&gt;next = 0;<o:p></o:p><br />
+	cur-&gt; next = head;<o:p></o:p><br />
+	for(; curnext!=0; )<o:p></o:p><br />
+	{<o:p></o:p><br />
+	cur-&gt;next = pre;<o:p></o:p><br />
+	pre = cur;<o:p></o:p><br />
+	cur = curnext;<o:p></o:p><br />
+	curnext = curnext-&gt;next;<o:p></o:p><br />
+	}<o:p></o:p></p>
+<p class="MsoNormal">curnext-&gt;next = cur;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	}<o:p></o:p></p>
+<p class="MsoNormal">
+	<strong>9.<span style="mso-spacerun:yes">&nbsp; </span>What do you mean by inline function?</strong><o:p></o:p><br />
+	The idea behind inline functions is to insert the code of a called function at the point where the function is called. If done carefully, this can improve the application&#39;s performance in exchange for increased compile time and possibly (but not always) an increase in the size of the generated binary executables.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>10. Write a program that ask for user input from 5 to 9 then calculate the average</strong><o:p></o:p></p>
+<p class="MsoNormal">#include &quot;iostream.h&quot;<o:p></o:p><br />
+	int main() {<o:p></o:p><br />
+	int MAX = 4;<o:p></o:p><br />
+	int total = 0;<o:p></o:p><br />
+	int average;<o:p></o:p><br />
+	int numb;<o:p></o:p><br />
+	for (int i=0; i&lt;MAX; i++) {<o:p></o:p><br />
+	cout &lt;&lt; &quot;Please enter your input between 5 and 9: &quot;;<o:p></o:p><br />
+	cin &gt;&gt; numb;<o:p></o:p><br />
+	while ( numb&lt;5 || numb&gt;9) {<o:p></o:p><br />
+	cout &lt;&lt; &quot;Invalid input, please re-enter: &quot;;<o:p></o:p><br />
+	cin &gt;&gt; numb;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	total = total + numb;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	average = total/MAX;<o:p></o:p><br />
+	cout &lt;&lt; &quot;The average number is: &quot; &lt;&lt; average &lt;&lt; &quot;\n&quot;;<o:p></o:p><br />
+	return 0;<o:p></o:p><br />
+	}</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p>	<strong>11. Write a short code using C++ to print out all odd number from 1 to 100 using a for loop</strong><o:p></o:p></p>
+<p class="MsoNormal">for( unsigned int i = 1; i &lt; = 100; i++ )<o:p></o:p><br />
+	if( i &amp; 0x00000001 )<o:p></o:p><br />
+	cout &lt;&lt; i &lt;&lt; \&quot;,\&quot;;</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>12. What is public, protected, private?</strong><o:p></o:p><br />
+	Public, protected and private are three access specifier in C++.<o:p></o:p><br />
+	Public data members and member functions are accessible outside the class.<o:p></o:p><br />
+	Protected data members and member functions are only available to derived classes.<o:p></o:p><br />
+	Private data members and member functions can&rsquo;t be accessed outside the class. However there is an exception can be using friend classes.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>13. Tell how to check whether a linked list is circular.</strong><o:p></o:p><br />
+	Create two pointers, each set to the start of the list. Update each as follows: while (pointer1) {<o:p></o:p><br />
+	pointer1 = pointer1-&gt;next;<o:p></o:p><br />
+	pointer2 = pointer2-&gt;next; if (pointer2) pointer2=pointer2-&gt;next;<o:p></o:p><br />
+	if (pointer1 == pointer2) {<o:p></o:p><br />
+	print (\&quot;circular\n\&quot;);<o:p></o:p><br />
+	}<o:p></o:p><br />
+	}<o:p></o:p><br />
+	OK, why does this work?<o:p></o:p><br />
+	If a list is circular, at some point pointer2 will wrap around and be either at the item just before pointer1, or the item before that. Either way, it&rsquo;s either 1 or 2 jumps until they meet.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>14. What is virtual constructors/destructors?</strong><o:p></o:p><br />
+	Virtual destructors:<o:p></o:p>If an object (with a non-virtual destructor) is destroyed explicitly by applying the delete operator to a base-class pointer to the object, the base-class destructor function (matching the pointer type) is called on the object.<o:p></o:p><br />
+	There is a simple solution to this problem declare a virtual base-class destructor. This makes all derived-class destructors virtual even though they don&rsquo;t have the same name as the base-class destructor. Now, if the object in the hierarchy is destroyed explicitly by applying the delete operator to a base-class pointer to a derived-class object, the destructor for the appropriate class is called. Virtual constructor: Constructors cannot be virtual. Declaring a constructor as a virtual function is a syntax error.<o:p></o:p><br />
+	Virtual destructors: If an object (with a non-virtual destructor) is destroyed explicitly by applying the delete operator to a base-class pointer to the object, the base-class destructor function (matching the pointer type) is called on the object.<o:p></o:p><br />
+	There is a simple solution to this problem &ndash; declare a virtual base-class destructor. This makes all derived-class destructors virtual even though they don&rsquo;t have the same name as the base-class destructor. Now, if the object in the hierarchy is destroyed explicitly by applying the delete operator to a base-class pointer to a derived-class object, the destructor for the appropriate class is called.<o:p></o:p><br />
+	Virtual constructor: Constructors cannot be virtual. Declaring a constructor as a virtual function is a syntax error.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>15.<span style="mso-spacerun:yes">&nbsp; </span>Does c++ support multilevel and multiple inheritance?</strong><o:p></o:p><br />
+	Yes.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal"><strong>16.<span style="mso-spacerun:yes">&nbsp; </span>What are the advantages of inheritance?</strong><o:p></o:p><br />
+	&bull; It permits code reusability.<o:p></o:p><br />
+	&bull; Reusability saves time in program development.<o:p></o:p><br />
+	&bull; It encourages the reuse of proven and debugged high-quality software, thus reducing problem after a system becomes functional.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>17.<span style="mso-spacerun:yes">&nbsp; </span>What is the difference between declaration and definition?</strong><o:p></o:p><br />
+	The declaration tells the compiler that at some later point we plan to present the definition of this declaration.<o:p></o:p><br />
+	E.g.: void stars () //function declaration<o:p></o:p><br />
+	The definition contains the actual implementation.<o:p></o:p><br />
+	E.g.: void stars () // declarator<o:p></o:p><br />
+	{<o:p></o:p><br />
+	for(int j=10; j&gt;=0; j--) //function body<o:p></o:p><br />
+	cout&lt;&lt;&rdquo;*&rdquo;;<o:p></o:p><br />
+	cout&lt;&lt;endl;<br />
+	&nbsp;}<o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>18. What is the difference between an array and a list?</strong></p>
+<p class="MsoNormal">Array is collection of homogeneous elements. List is collection of heterogeneous elements.<o:p></o:p><br />
+	For Array memory allocated is static and continuous. For List memory allocated is dynamic and Random.<o:p></o:p><br />
+	Array: User need not have to keep in track of next memory allocation.<o:p></o:p><br />
+	List: User has to keep in Track of next location where memory is allocated.<o:p></o:p><br />
+	Array uses direct access of stored members, list uses sequencial access for members.<o:p></o:p><br />
+	/With Array you have direct access to memory position 5<o:p></o:p><br />
+	Object x = a[5]; // x takes directly a reference to 5th element of array<o:p></o:p><br />
+	//With the list you have to cross all previous nodes in order to get the 5th node:<o:p></o:p><br />
+	list mylist;<o:p></o:p><br />
+	list::iterator it;<o:p></o:p><br />
+	for( it = list.begin() ; it != list.end() ; it++ )<o:p></o:p><br />
+	{<o:p></o:p><br />
+	if( i==5)<o:p></o:p><br />
+	{<o:p></o:p><br />
+	x = *it;<o:p></o:p><br />
+	break;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	i++;<o:p></o:p><br />
+	}</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>19. What is a template?</strong><o:p></o:p><br />
+	Templates allow to create generic functions that admit any data type as parameters and return value without having to overload the function with all the possible data types. Until certain point they fulfill the functionality of a macro. Its prototype is any of the two following ones:<o:p></o:p><br />
+	template &lt;class indetifier&gt; function_declaration; template &lt;typename indetifier&gt; function_declaration;<o:p></o:p><br />
+	The only difference between both prototypes is the use of keyword class or typename, its use is indistinct since both expressions have exactly the same meaning and behave exactly the same way.<o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>20. Define a constructor - What it is and how it might be called (2 methods).</strong><o:p></o:p><br />
+	Constructor is a member function of the class, with the name of the function being the same as the class name. It also specifies how the object should be initialized.<o:p></o:p><br />
+	Ways of calling constructor:<o:p></o:p><br />
+	1) Implicitly: automatically by complier when an object is created.<o:p></o:p><br />
+	2) Calling the constructors explicitly is possible, but it makes the code unverifiable.<o:p></o:p><br />
+	class Point2D{<o:p></o:p><br />
+	int x; int y;<o:p></o:p><br />
+	public Point2D() : x(0) , y(0) {} //default (no argument) constructor<o:p></o:p><br />
+	};<o:p></o:p><br />
+	main(){<o:p></o:p><br />
+	Point2D MyPoint; // Implicit Constructor call. In order to allocate memory on stack, the default constructor is implicitly called.<o:p></o:p><br />
+	Point2D * pPoint = new Point2D(); // Explicit Constructor call. In order to allocate memory on HEAP we call the default constructor. <o:p></o:p><br />
+	You have two pairs: new() and delete() and another pair : alloc() and free().</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>21.<span style="mso-spacerun:yes">&nbsp; </span>Explain differences between eg. new() and malloc()</strong><o:p></o:p><br />
+	1.) &ldquo;new and delete&rdquo; are preprocessors while &ldquo;malloc() and free()&rdquo; are functions. [we dont use brackets will calling new or delete].<o:p></o:p><br />
+	2.) no need of allocate the memory while using &ldquo;new&rdquo; but in &ldquo;malloc()&rdquo; we have to use &ldquo;sizeof()&rdquo;.<o:p></o:p><br />
+	3.) &ldquo;new&rdquo; will initlize the new memory to 0 but &ldquo;malloc()&rdquo; gives random value in the new alloted memory location [better to use calloc()]<o:p></o:p><br />
+	new() allocates continous space for the object instace malloc() allocates distributed space.<o:p></o:p><br />
+	new() is castless, meaning that allocates memory for this specific type,<o:p></o:p><br />
+	malloc(), calloc() allocate space for void * that is cated to the specific class type pointer. <o:p></o:p></p>
+<p class="MsoNormal">22. What is the difference between class and structure?<o:p></o:p><br />
+	Structure: Initially (in C) a structure was used to bundle different type of data types together to perform a particular functionality. But C++ extended the structure to contain functions also. The major difference is that all declarations inside a structure are by default public.<o:p></o:p><br />
+	Class: Class is a successor of Structure. By default all the members inside the class are private.<o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>23. What is RTTI?</strong><o:p></o:p><br />
+	Runtime type identification (RTTI) lets you find the dynamic type of an object when you have only a pointer or a reference to the base type. RTTI is the official way in standard C++ to discover the type of an object and to convert the type of a pointer or reference (that is, dynamic typing).</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>24.What is encapsulation?</strong><o:p></o:p><br />
+	Packaging an object&rsquo;s variables within its methods is called encapsulation.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">25<strong>.Explain term &ldquo;Polymorphism&rdquo;</strong> and give an example using eg. SHAPE object: If I have a base class SHAPE, how would I define DRAW methods for two objects CIRCLE and SQUARE<o:p></o:p>&ldquo;Polymorphism&rdquo;: A phenomenon which enables an object to react differently to the same function call. in C++ it is attained by using a keyword virtual<o:p></o:p><br />
+	Example<o:p></o:p><br />
+	public class SHAPE<o:p></o:p><br />
+	{<o:p></o:p><br />
+	public virtual void SHAPE::DRAW()=0;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	Note here the function DRAW() is pure virtual which means the sub classes must implement the DRAW() method and SHAPE cannot be instatiated<o:p></o:p><br />
+	public class CIRCLE::public SHAPE<o:p></o:p><br />
+	{<o:p></o:p><br />
+	public void CIRCLE::DRAW()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	// TODO drawing circle<o:p></o:p><br />
+	}<o:p></o:p><br />
+	}<o:p></o:p><br />
+	public class SQUARE::public SHAPE<o:p></o:p><br />
+	{<o:p></o:p><br />
+	public void SQUARE::DRAW()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	// TODO drawing square<o:p></o:p><br />
+	}<o:p></o:p><br />
+	}<o:p></o:p></p>
+<p class="MsoNormal">now from the user class the calls would be like globally<o:p></o:p><br />
+	SHAPE *newShape;<o:p></o:p><br />
+	When user action is to draw<o:p></o:p><br />
+	public void MENU::OnClickDrawCircle(){<o:p></o:p><br />
+	newShape = new CIRCLE();<o:p></o:p><br />
+	}<o:p></o:p></p>
+<p class="MsoNormal">public void MENU::OnClickDrawCircle(){<o:p></o:p><br />
+	newShape = new SQUARE();<o:p></o:p><br />
+	}<o:p></o:p></p>
+<p class="MsoNormal">the when user actually draws<o:p></o:p><br />
+	public void CANVAS::OnMouseOperations(){<o:p></o:p><br />
+	newShape-&gt;DRAW();<o:p></o:p><br />
+	}<o:p></o:p><br />
+	class SHAPE{<o:p></o:p><br />
+	public virtual Draw() = 0; //abstract class with a pure virtual method<o:p></o:p><br />
+	};<o:p></o:p><br />
+	class CIRCLE{<o:p></o:p><br />
+	public int r;<o:p></o:p><br />
+	public virtual Draw() { this-&gt;drawCircle(0,0,r); }<o:p></o:p><br />
+	};<o:p></o:p></p>
+<p class="MsoNormal">class SQURE<o:p></o:p><br />
+	public int a;<o:p></o:p><br />
+	public virtual Draw() { this-&gt;drawRectangular(0,0,a,a); }<o:p></o:p><br />
+	};<o:p></o:p><br />
+	Each object is driven down from SHAPE implementing Draw() function in its own way.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>26. What is an object?</strong><o:p></o:p><br />
+	Object is a software bundle of variables and related methods. Objects have state and behavior.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>27. How can you tell what shell you are running on UNIX system?</strong><o:p></o:p><br />
+	You can do the Echo $RANDOM. It will return a undefined variable if you are from the C-Shell, just a return prompt if you are from the Bourne shell, and a 5 digit random numbers if you are from the Korn shell. You could also do a ps -l and look for the shell with the highest PID.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>28. What do you mean by inheritance?</strong><o:p></o:p><br />
+	Inheritance is the process of creating new classes, called derived classes, from existing classes or base classes. The derived class inherits all the capabilities of the base class, but can add embellishments and refinements of its own.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>29.Describe PRIVATE, PROTECTED and PUBLIC &ndash; the differences and give examples.</strong><o:p></o:p><br />
+	class Point2D{<o:p></o:p><br />
+	int x; int y;<o:p></o:p><br />
+	public int color;<o:p></o:p><br />
+	protected bool pinned;<o:p></o:p><br />
+	public Point2D() : x(0) , y(0) {} //default (no argument) constructor<o:p></o:p><br />
+	};<o:p></o:p><br />
+	Point2D MyPoint;<o:p></o:p><br />
+	You cannot directly access private data members when they are declared (implicitly) private:<o:p></o:p><br />
+	MyPoint.x = 5; // Compiler will issue a compile ERROR<o:p></o:p><br />
+	//Nor yoy can see them:<o:p></o:p><br />
+	int x_dim = MyPoint.x; // Compiler will issue a compile ERROR<o:p></o:p></p>
+<p class="MsoNormal">On the other hand, you can assign and read the public data members:<o:p></o:p><br />
+	MyPoint.color = 255; // no problem<o:p></o:p><br />
+	int col = MyPoint.color; // no problem<o:p></o:p><br />
+	With protected data members you can read them but not write them: MyPoint.pinned = true; // Compiler will issue a compile ERROR<o:p></o:p><br />
+	bool isPinned = MyPoint.pinned; // no problem</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>30. What is namespace?</strong><o:p></o:p><br />
+	Namespaces allow us to group a set of global classes, objects and/or functions under a name. To say it somehow, they serve to split the global scope in sub-scopes known as namespaces.<o:p></o:p><br />
+	The form to use namespaces is:<o:p></o:p><br />
+	namespace identifier { namespace-body }<o:p></o:p><br />
+	Where identifier is any valid identifier and namespace-body is the set of classes, objects and functions that are included within the namespace. For example:<o:p></o:p><br />
+	namespace general { int a, b; } In this case, a and b are normal variables integrated within the general namespace. In order to access to these variables from outside the namespace we have to use the scope operator ::. For example, to access the previous variables we would have to put:<o:p></o:p><br />
+	general::a general::b<o:p></o:p><br />
+	The functionality of namespaces is specially useful in case that there is a possibility that a global object or function can have the same name than another one, causing a redefinition error.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>31. What is a COPY CONSTRUCTOR and when is it called?</strong><o:p></o:p><br />
+	A copy constructor is a method that accepts an object of the same class and copies it&rsquo;s data members to the object on the left part of assignment:<o:p></o:p><br />
+	class Point2D{<o:p></o:p><br />
+	int x; int y;<o:p></o:p><br />
+	public int color;<o:p></o:p><br />
+	protected bool pinned;<o:p></o:p><br />
+	public Point2D() : x(0) , y(0) {} //default (no argument) constructor<o:p></o:p><br />
+	public Point2D( const Point2D &amp; ) ;<o:p></o:p><br />
+	};<o:p></o:p><br />
+	Point2D::Point2D( const Point2D &amp; p )<o:p></o:p><br />
+	{<o:p></o:p><br />
+	this-&gt;x = p.x;<o:p></o:p><br />
+	this-&gt;y = p.y;<o:p></o:p><br />
+	this-&gt;color = p.color;<o:p></o:p><br />
+	this-&gt;pinned = p.pinned;<o:p></o:p><br />
+	}<o:p></o:p></p>
+<p class="MsoNormal">main(){<o:p></o:p><br />
+	Point2D MyPoint;<o:p></o:p><br />
+	MyPoint.color = 345;<o:p></o:p><br />
+	Point2D AnotherPoint = Point2D( MyPoint ); // now AnotherPoint has color = 345</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>32. What is Boyce Codd Normal form?</strong><o:p></o:p><br />
+	A relation schema R is in BCNF with respect to a set F of functional dependencies if for all functional dependencies in F+ of the form a-&gt; , where a and b is a subset of R, at least one of the following holds:<o:p></o:p><br />
+	* a- &gt; b is a trivial functional dependency (b is a subset of a)<o:p></o:p><br />
+	* a is a superkey for schema R</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>33. What is virtual class and friend class?</strong><o:p></o:p><br />
+	Friend classes are used when two or more classes are designed to work together and need access to each other&#39;s implementation in ways that the rest of the world shouldn&#39;t be allowed to have. In other words, they help keep private things private. For instance, it may be desirable for class DatabaseCursor to have more privilege to the internals of class Database than main() has.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>34. What is the word you will use when defining a function in base class to allow this function to be a polimorphic function?</strong><o:p></o:p></p>
+<p class="MsoNormal">virtual</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>35. What do you mean by binding of data and functions?</strong><o:p></o:p></p>
+<p class="MsoNormal">Encapsulation.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>36. What are 2 ways of exporting a function from a DLL?</strong><o:p></o:p></p>
+<p class="MsoNormal">1. Taking a reference to the function from the DLL instance.<o:p></o:p><br />
+	2. Using the DLL &rsquo;s Type Library</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>37. What is the difference between an object and a class?</strong><o:p></o:p></p>
+<p class="MsoNormal">Classes and objects are separate but related concepts. Every object belongs to a class and every class contains one or more related objects.<o:p></o:p><br />
+	- A Class is static. All of the attributes of a class are fixed before, during, and after the execution of a program. The attributes of a class don&#39;t change.<o:p></o:p><br />
+	- The class to which an object belongs is also (usually) static. If a particular object belongs to a certain class at the time that it is created then it almost certainly will still belong to that class right up until the time that it is destroyed.<o:p></o:p><br />
+	- An Object on the other hand has a limited lifespan. Objects are created and eventually destroyed. Also during that lifetime, the attributes of the object may undergo significant change.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>38. What is a class?</strong><o:p></o:p></p>
+<p class="MsoNormal">Class is a user-defined data type in C++. It can be created to solve a particular kind of problem. After creation the user need not know the specifics of the working of a class.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>39. What is friend function?</strong><o:p></o:p></p>
+<p class="MsoNormal">As the name suggests, the function acts as a friend to a class. As a friend of a class, it can access its private and protected members. A friend function is not a member of the class. But it must be listed in the class definition.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>40. Which recursive sorting technique always makes recursive calls to sort subarrays that are about half size of the original array?</strong><o:p></o:p></p>
+<p class="MsoNormal">Mergesort always makes recursive calls to sort subarrays that are about half size of the original array, resulting in O(n log n) time.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>41. What is abstraction?</strong><o:p></o:p></p>
+<p class="MsoNormal">Abstraction is of the process of hiding unwanted details from the user.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>42. What are virtual functions?</strong></p>
+<p class="MsoNormal">A virtual function allows derived classes to replace the implementation provided by the base class. The compiler makes sure the replacement is always called whenever the object in question is actually of the derived class, even if the object is accessed by a base pointer rather than a derived pointer. This allows algorithms in the base class to be replaced in the derived class, even if users don&#39;t know about the derived class.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>43.What is the difference between an external iterator and an internal iterator? Describe an advantage of an external iterator</strong>.<o:p></o:p></p>
+<p class="MsoNormal">An internal iterator is implemented with member functions of the class that has items to step through. .An external iterator is implemented as a separate class that can be &quot;attach&quot; to the object that has items to step through. .An external iterator has the advantage that many difference iterators can be active simultaneously on the same object.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>44. What is a scope resolution operator?</strong><o:p></o:p><br />
+	A scope resolution operator (::), can be used to define the member functions of a class outside the class.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>45. What do you mean by pure virtual functions?</strong></p>
+<p class="MsoNormal">A pure virtual member function is a member function that the base class forces derived classes to provide. Normally these member functions have no implementation. Pure virtual functions are equated to zero.<o:p></o:p><br />
+	class Shape { public: virtual void draw() = 0; };</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>46. What is polymorphism? Explain with an example?</strong></p>
+<p class="MsoNormal">&quot;Poly&quot; means &quot;many&quot; and &quot;morph&quot; means &quot;form&quot;. Polymorphism is the ability of an object (or reference) to assume (be replaced by) or become many different forms of object.<o:p></o:p><br />
+	Example: function overloading, function overriding, virtual functions. Another example can be a plus &lsquo;+&rsquo; sign, used for adding two integers or for using it to concatenate two strings.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>47.What&rsquo;s the output of the following program? Why?</strong></p>
+<p class="MsoNormal">#include &lt;stdio.h&gt;<o:p></o:p><br />
+	main()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	typedef union<o:p></o:p><br />
+	{<o:p></o:p><br />
+	int a;<o:p></o:p><br />
+	char b[10];<o:p></o:p><br />
+	float c;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	Union;<o:p></o:p><br />
+	Union x,y = {100};<o:p></o:p><br />
+	x.a = 50;<o:p></o:p><br />
+	strcpy(x.b,\&quot;hello\&quot;);<o:p></o:p><br />
+	x.c = 21.50;<o:p></o:p><br />
+	printf(\&quot;Union x : %d %s %f \n\&quot;,x.a,x.b,x.c );<o:p></o:p><br />
+	printf(\&quot;Union y :%d %s%f \n\&quot;,y.a,y.b,y.c);<o:p></o:p><br />
+	}<o:p></o:p><br />
+	Given inputs X, Y, Z and operations | and &amp; (meaning bitwise OR and AND, respectively)<o:p></o:p><br />
+	What is output equal to in<o:p></o:p><br />
+	output = (X &amp; Y) | (X &amp; Z) | (Y &amp; Z)</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal"><strong>48. Why arrays are usually processed with for loop?</strong></p>
+<p class="MsoNormal">The real power of arrays comes from their facility of using an index variable to traverse the array, accessing each element with the same expression a[i]. All the is needed to make this work is a iterated statement in which the variable i serves as a counter, incrementing from 0 to a.length -1. That is exactly what a loop does.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>49. What is an HTML tag?</strong></p>
+<p class="MsoNormal">An HTML tag is a syntactical construct in the HTML language that abbreviates specific instructions to be executed when the HTML script is loaded into a Web browser. It is like a method in Java, a function in C++, a procedure in Pascal, or a subroutine in FORTRAN.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>50.Explain which of the following declarations will compile and what will be constant - a pointer or the value pointed at: * const char *</strong><o:p></o:p><br />
+	* char const *<o:p></o:p><br />
+	* char * const</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>51. What problems might the following macro bring to the application?</strong><o:p></o:p></p>
+<p class="MsoNormal">#define sq(x) x*x</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>52. Anything wrong with this code?</strong><o:p></o:p></p>
+<p class="MsoNormal">T *p = new T[10];<o:p></o:p><br />
+	delete p;<o:p></o:p><br />
+	Everything is correct, Only the first element of the array will be deleted&rdquo;, The entire array will be deleted, but only the first element destructor will be called.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>53. Anything wrong with this code?</strong><o:p></o:p></p>
+<p class="MsoNormal">T *p = 0;<o:p></o:p><br />
+	delete p;<o:p></o:p><br />
+	Yes, the program will crash in an attempt to delete a null pointer.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>54. How do you decide which integer type to use?</strong><o:p></o:p></p>
+<p class="MsoNormal">It depends on our requirement. When we are required an integer to be stored in 1 byte (means less than or equal to 255) we use short int, for 2 bytes we use int, for 8 bytes we use long int.<o:p></o:p><br />
+	A char is for 1-byte integers, a short is for 2-byte integers, an int is generally a 2-byte or 4-byte integer (though not necessarily), a long is a 4-byte integer, and a long long is a 8-byte integer.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>55. What does extern mean in a function declaration?</strong></p>
+<p class="MsoNormal">Using extern in a function declaration we can make a function such that it can used outside the file in which it is defined.<o:p></o:p><br />
+	An extern variable, function definition, or declaration also makes the described variable or function usable by the succeeding part of the current source file. This declaration does not replace the definition. The declaration is used to describe the variable that is externally defined.<o:p></o:p><br />
+	If a declaration for an identifier already exists at file scope, any extern declaration of the same identifier found within a block refers to that same object. If no other declaration for the identifier exists at file scope, the identifier has external linkage.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>56. What can I safely assume about the initial values of variables which are not explicitly initialized?</strong><o:p></o:p></p>
+<p class="MsoNormal">It depends on complier which may assign any garbage value to a variable if it is not initialized.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>57. What is the difference between char a[] = &ldquo;string&rdquo;; and char *p = &ldquo;string&rdquo;;?</strong><o:p></o:p></p>
+<p class="MsoNormal">In the first case 6 bytes are allocated to the variable a which is fixed, where as in the second case if *p is assigned to some other value the allocate memory can change.<o:p></o:p></p>
+<p>	<strong>58. What&rsquo;s the auto keyword good for?</strong><o:p></o:p><br />
+	Not much. It declares an object with automatic storage duration. Which means the object will be destroyed at the end of the objects scope. All variables in functions that are not declared as static and not dynamically allocated have automatic storage duration by default.<o:p></o:p><br />
+	For example<o:p></o:p><br />
+	int main()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	int a; //this is the same as writing &ldquo;auto int a;&rdquo;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	Local variables occur within a scope; they are &ldquo;local&rdquo; to a function. They are often called automatic variables because they automatically come into being when the scope is entered and automatically go away when the scope closes. The keyword auto makes this explicit, but local variables default to auto auto auto auto so it is never necessary to declare something as an auto auto auto auto.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>59. What is the difference between char a[] = &ldquo;string&rdquo;; and char *p = &ldquo;string&rdquo;; ?</strong><o:p></o:p></p>
+<p class="MsoNormal">a[] = &ldquo;string&rdquo;;<o:p></o:p><br />
+	char *p = &ldquo;string&rdquo;;<o:p></o:p><br />
+	The difference is this:<o:p></o:p><br />
+	p is pointing to a constant string, you can never safely say<o:p></o:p><br />
+	p[3]=&rsquo;x&#39;;<o:p></o:p><br />
+	however you can always say a[3]=&rsquo;x&#39;;<o:p></o:p><br />
+	char a[]=&rdquo;string&rdquo;; - character array initialization.<o:p></o:p><br />
+	char *p=&rdquo;string&rdquo; ; - non-const pointer to a const-string.( this is permitted only in the case of char pointer in C++ to preserve backward compatibility with C.)</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>60. How do I declare an array of N pointers to functions returning pointers to functions returning pointers to characters?</strong><o:p></o:p></p>
+<p class="MsoNormal">If you want the code to be even slightly readable, you will use typedefs.<o:p></o:p><br />
+	typedef char* (*functiontype_one)(void);<o:p></o:p><br />
+	typedef functiontype_one (*functiontype_two)(void);<o:p></o:p><br />
+	functiontype_two myarray[N]; //assuming N is a const integral</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>61. What does extern mean in a function declaration?</strong><o:p></o:p><br />
+	It tells the compiler that a variable or a function exists, even if the compiler hasn&rsquo;t yet seen it in the file currently being compiled. This variable or function may be defined in another file or further down in the current file.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>62. How do I initialize a pointer to a function?</strong><o:p></o:p></p>
+<p class="MsoNormal">This is the way to initialize a pointer to a function<o:p></o:p><br />
+	void fun(int a)<o:p></o:p><br />
+	{<o:p></o:p><br />
+	}<o:p></o:p><br />
+	void main()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	void (*fp)(int);<o:p></o:p><br />
+	fp=fun;<o:p></o:p><br />
+	fp(1);<o:p></o:p><br />
+	}</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>63. How do you link a C++ program to C functions?</strong></p>
+<p class="MsoNormal">By using the extern &quot;C&quot; linkage specification around the C function declarations.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>64. Explain the scope resolution operator.</strong></p>
+<p class="MsoNormal">It permits a program to reference an identifier in the global scope that has been hidden by another identifier with the same name in the local scope.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>65. What are the differences between a C++ struct and C++ class?</strong><o:p></o:p><br />
+	The default member and base-class access specifier are different.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>66. How many ways are there to initialize an int with a constant?</strong></p>
+<p class="MsoNormal">Two. There are two formats for initializers in C++ as shown in the example that follows. The first format uses the traditional C notation. The second format uses constructor notation.<o:p></o:p><br />
+	int foo = 123;<o:p></o:p><br />
+	int bar (123);</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>67. How does throwing and catching exceptions differ from using setjmp and longjmp?</strong></p>
+<p class="MsoNormal">The throw operation calls the destructors for automatic objects instantiated since entry to the try block.<o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>68. What is a default constructor?</strong><o:p></o:p></p>
+<p class="MsoNormal">Default constructor WITH arguments class B { public: B (int m = 0) : n (m) {} int n; }; int main(int argc, char *argv[]) { B b; return 0; }</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>69. What is a conversion constructor?</strong><o:p></o:p><br />
+	A constructor that accepts one argument of a different type.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>70. What is the difference between a copy constructor and an overloaded assignment operator?</strong><o:p></o:p></p>
+<p class="MsoNormal">A copy constructor constructs a new object by using the content of the argument object. An overloaded assignment operator assigns the contents of an existing object to another existing object of the same class.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>71. When should you use multiple inheritance?</strong></p>
+<p class="MsoNormal">There are three acceptable answers: &quot;Never,&quot; &quot;Rarely,&quot; and &quot;When the problem domain cannot be accurately modeled any other way.&quot;</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>72. Explain the ISA and HASA class relationships. How would you implement each in a class design?</strong></p>
+<p class="MsoNormal">A specialized class &quot;is&quot; a specialization of another class and, therefore, has the ISA relationship with the other class. An Employee ISA Person. This relationship is best implemented with inheritance. Employee is derived from Person. A class may have an instance of another class. For example, an employee &quot;has&quot; a salary, therefore the Employee class has the HASA relationship with the Salary class. This relationship is best implemented by embedding an object of the Salary class in the Employee class.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>73. When is a template a better solution than a base class?</strong></p>
+<p class="MsoNormal">When you are designing a generic class to contain or otherwise manage objects of other types, when the format and behavior of those other types are unimportant to their containment or management, and particularly when those other types are unknown (thus, the generosity) to the designer of the container or manager class.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>74. What is a mutable member?</strong></p>
+<p class="MsoNormal">One that can be modified by the class even when the object of the class or the member function doing the modification is const.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>75. What is an explicit constructor?</strong></p>
+<p class="MsoNormal">A conversion constructor declared with the explicit keyword. The compiler does not use an explicit constructor to implement an implied conversion of types. It&rsquo;s purpose is reserved explicitly for construction.<o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>76. What is the Standard Template Library (STL)?</strong></p>
+<p class="MsoNormal">A library of container templates approved by the ANSI committee for inclusion in the standard C++ specification. A programmer who then launches into a discussion of the generic programming model, iterators, allocators, algorithms, and such, has a higher than average understanding of the new technology that STL brings to C++ programming.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>77. Describe run-time type identification.</strong></p>
+<p class="MsoNormal">The ability to determine at run time the type of an object by using the typeid operator or the dynamic cast operator.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>78. What problem does the namespace feature solve?</strong></p>
+<p class="MsoNormal">Multiple providers of libraries might use common global identifiers causing a name collision when an application tries to link with two or more such libraries. The namespace feature surrounds a library&rsquo;s external declarations with a unique namespace that eliminates the potential for those collisions.<o:p></o:p><br />
+	This solution assumes that two library vendors don&rsquo;t use the same namespace identifier, of course.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>79. Are there any new intrinsic (built-in) data types?</strong></p>
+<p class="MsoNormal">Yes. The ANSI committee added the bool intrinsic type and its true and false value keywords.<o:p></o:p></p>
+<p class="MsoNormal">80. Will the following program execute?<o:p></o:p><br />
+	void main()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	void *vptr = (void *) malloc(sizeof(void));<o:p></o:p><br />
+	vptr++;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	It will throw an error, as arithmetic operations cannot be performed on void pointers.</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>81. For the following C program</strong><o:p></o:p></p>
+<p class="MsoNormal">#define AREA(x)(3.14*x*x)<o:p></o:p><br />
+	main()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	float r1=6.25,r2=2.5,a;<o:p></o:p><br />
+	a=AREA(r1);<o:p></o:p><br />
+	printf(&quot;\n Area of the circle is %f&quot;, a);<o:p></o:p><br />
+	a=AREA(r2);<o:p></o:p><br />
+	printf(&quot;\n Area of the circle is %f&quot;, a);<o:p></o:p><br />
+	}<o:p></o:p><br />
+	What is the output?<o:p></o:p><br />
+	Ans. Area of the circle is 122.656250<o:p></o:p><br />
+	Area of the circle is<span style="mso-spacerun:yes">&nbsp; </span>19.625000<o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong>82. void main()</strong><o:p></o:p></p>
+<p class="MsoNormal">{<o:p></o:p><br />
+	int d=5;<o:p></o:p><br />
+	printf(&quot;%f&quot;,d);<o:p></o:p><br />
+	}<o:p></o:p><br />
+	Ans: Undefined<o:p></o:p></p>
+<p class="MsoNormal">83. void main()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	int i;<o:p></o:p><br />
+	for(i=1;i&lt;4,i++)<o:p></o:p><br />
+	switch(i)<o:p></o:p><br />
+	case 1: printf(&quot;%d&quot;,i);break;<o:p></o:p><br />
+	{<o:p></o:p><br />
+	case 2:printf(&quot;%d&quot;,i);break;<o:p></o:p><br />
+	case 3:printf(&quot;%d&quot;,i);break;<o:p></o:p><br />
+	}<o:p></o:p><br />
+	switch(i) case 4:printf(&quot;%d&quot;,i);<o:p></o:p><br />
+	}<o:p></o:p><br />
+	<strong>Ans: 1,2,3,4</strong><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">84.void main()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	char *s=&quot;\12345s\n&quot;;<o:p></o:p><br />
+	printf(&quot;%d&quot;,sizeof(s));<o:p></o:p><br />
+	}<o:p></o:p><br />
+	<strong>Ans: 6</strong></p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">85.void main()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	unsigned i=1; /* unsigned char k= -1 =&gt; k=255; */<o:p></o:p><br />
+	signed j=-1; /* char k= -1 =&gt; k=65535 */<o:p></o:p><br />
+	/* unsigned or signed int k= -1 =&gt;k=65535 */<o:p></o:p><br />
+	if(i&lt;j)<o:p></o:p><br />
+	printf(&quot;less&quot;);<o:p></o:p><br />
+	else<o:p></o:p><br />
+	if(i&gt;j)<o:p></o:p><br />
+	printf(&quot;greater&quot;);<o:p></o:p><br />
+	else<o:p></o:p><br />
+	if(i==j)<o:p></o:p><br />
+	printf(&quot;equal&quot;);<o:p></o:p><br />
+	}<o:p></o:p><br />
+	Ans: less&lt;/j)<o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">86. void main()<o:p></o:p><br />
+	{<o:p></o:p><br />
+	float j;<o:p></o:p><br />
+	j=1000*1000;<o:p></o:p><br />
+	printf(&quot;%f&quot;,j);<o:p></o:p><br />
+	}<o:p></o:p><br />
+	1. 1000000<o:p></o:p><br />
+	2. Overflow<o:p></o:p><br />
+	3. Error<o:p></o:p><br />
+	4. None <o:p></o:p><br />
+	<strong>Ans: 4</strong></p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal"><strong>87. How do you declare an array of N pointers to functions returning<span style="mso-spacerun:yes">&nbsp; </span>pointers to functions returning pointers to characters?</strong><o:p></o:p></p>
+<p class="MsoNormal">Ans: The first part of this question can be answered in at least three ways:<o:p></o:p><br />
+	1. char *(*(*a[N])())();<o:p></o:p><br />
+	2. Build the declaration up incrementally, using typedefs:<o:p></o:p><br />
+	typedef char *pc;<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>/* pointer to char */<o:p></o:p><br />
+	typedef pc fpc();<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>/* function returning pointer to char */<o:p></o:p><br />
+	typedef fpc *pfpc;<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>/* pointer to above */<o:p></o:p><br />
+	typedef pfpc fpfpc();<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>/* function returning... */<o:p></o:p><br />
+	typedef fpfpc *pfpfpc;<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>/* pointer to... */<o:p></o:p><br />
+	pfpfpc a[N];<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>/* array of... */<o:p></o:p><br />
+	3. Use the cdecl program, which turns English into C and vice versa:<o:p></o:p><br />
+	cdecl&gt; declare a as array of pointer to function returning pointer to function returning pointer to char<o:p></o:p><br />
+	char *(*(*a[])())()</p>
+<p class="MsoNormal"><o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>88.What is a modifier?&nbsp;</strong></o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p>A modifier, also called a modifying function is a member function that changes the value of at least one data member. In other words, an operation that modifies the state of an object. Modifiers<o:p></o:p> are also known as &lsquo;mutators&rsquo;.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>89.What is an accessor?</strong></o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p>An accessor is a class operation that does not modify the state of an object. The accessor functions need to be declared as const operations&nbsp;</o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>90.Differentiate between a template class and class template.</strong></o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p>Template class: A generic definition or a parameterized class not instantiated until the client provides the needed information. It&rsquo;s jargon for plain templates.&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>Class template: A class template specifies how individual classes can be constructed much like the way class specifies how individual objects can be constructed. It&rsquo;s jargon for plain classes</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>91.When does a name clash occur?&nbsp;</strong></o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p>A name clash occurs when a name is defined in more than one place. For example., two different class libraries could give two different classes the same name. If you try to use many class libraries at&nbsp;<o:p></o:p> the same time, there is a fair chance that you will be unable to compile or link the program because of name clashes.&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>92.What is a dangling pointer?&nbsp;</strong></o:p></p>
+<p class="MsoNormal"><o:p>A dangling pointer arises when you use the address of an object after its lifetime is over. This may occur in situations like returning addresses of the automatic variables from a function or using the<o:p></o:p> address of the memory block after it is freed.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>93.Differentiate between the message and method.</strong></o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p>Message:</o:p></p>
+<p class="MsoNormal"><o:p>Objects communicate by sending messages to each other.<o:p></o:p><br />
+	A message is sent to invoke a method</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p>Method:</o:p></p>
+<p class="MsoNormal"><o:p>Provides response to a message.<o:p></o:p><br />
+	It is an implementation of an operation.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>94.What is an adaptor class or Wrapper class?&nbsp;</strong></o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p>A class that has no functionality of its own. Its member functions hide the use of a third party software component or an object with the non-compatible interface or a non-object-oriented implementation.&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>95.What is a Null object?&nbsp;</strong></o:p></p>
+<p class="MsoNormal"><o:p>It is an object of some class whose purpose is to indicate that a real object of that class does not exist. One common use for a null object is a return value from a member function that is supposed to<o:p></o:p> return an object with some specified properties but cannot find such an object.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>96.What is class invariant?&nbsp;</strong><o:p></o:p><br />
+	A class invariant is a condition that defines all valid states for an object. It is a logical condition to ensure the correct working of a class. Class invariants must hold when an object is created, and they&nbsp;<o:p></o:p> must be preserved under all operations of the class. In particular all class invariants are both preconditions and post-conditions for all operations or member functions of the class.&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>97.What do you mean by Stack unwinding?</strong></o:p></p>
+<p class="MsoNormal"><o:p>It is a process during exception handling when the destructor is called for all local objects between the place where the exception was thrown and where it is caught.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>98.What are proxy objects?&nbsp;</strong></o:p></p>
+<p class="MsoNormal"><o:p>Objects that stand for other objects are called proxy objects or surrogates.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>99.Name some pure object oriented languages.</strong>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>Smalltalk, Java, Eiffel, Sather.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>100.What is an orthogonal base class?&nbsp;</strong></o:p></p>
+<p class="MsoNormal"><o:p>If two base classes have no overlapping methods or data they are said to be independent of, or orthogonal to each other. Orthogonal in the sense means that two classes operate in different&nbsp;<o:p></o:p> dimensions and do not interfere with each other in any way. The same derived class may inherit such classes with no difficulty.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>101.What is the difference between Mutex and Binary semaphore?</strong></o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p>semaphore is used to synchronize processes. where as mutex is used to provide synchronization between threads running in the same process</o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>102.What is destructor?</strong></o:p></p>
+<p class="MsoNormal"><o:p>Destructor usually deletes any extra resources allocated by the object.&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>103.What are C++ storage classes?</strong></o:p></p>
+<p class="MsoNormal"><o:p>auto<o:p></o:p><br />
+	register<o:p></o:p><br />
+	static<o:p></o:p><br />
+	extern<o:p></o:p><br />
+	auto:the default. Variables are automatically created and initialized when they are defined and are destroyed at the end of the block containing their definition. They are not visible outside that block<o:p></o:p><br />
+	register:a type of auto variable. a suggestion to the compiler to use a CPU register for performance<o:p></o:p><br />
+	static:a variable that is known only in the function that contains its definition but is never destroyed and retains its value between calls to that function. It exists from the time the program begins execution<o:p></o:p><br />
+	extern:a static variable whose definition and placement is determined when all object and library modules are combined (linked) to form the executable code file. It can be visible outside the file where it is defined.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>104.What is reference ?</strong></o:p></p>
+<p class="MsoNormal"><o:p>reference is a name that acts as an alias, or alternative name, for a previously defined variable or an object.prepending variable with &quot;&amp;&quot; symbol makes it as reference.<o:p></o:p><br />
+	for example:&nbsp;<o:p></o:p><br />
+	int a;<o:p></o:p><br />
+	int &amp;b = a;&nbsp;<o:p></o:p></o:p></p>
+<p>	<strong>105.What are the defining traits of an object-oriented language?</strong></p>
+<p class="MsoNormal"><o:p>The defining traits of an object-oriented langauge are:<o:p></o:p><br />
+	encapsulation<o:p></o:p><br />
+	inheritance<o:p></o:p><br />
+	polymorphism</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>106.What is Quadratic Probing?</strong></o:p></p>
+<p class="MsoNormal"><o:p>The Performance problem encountered by linear probing is caused by the cluster buildup That occurs as a result of the probing sequence. Quadratic probing uses a different sequence to avoid primary clustering.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>107.What is the chaining?</strong></o:p></p>
+<p class="MsoNormal"><o:p>The Chaining technique basically looks at the hash table as an array of pointers to linked lists. Each slot in the hash table is either empty or simply consists of a pointer to a linked list. You resolve collisions by adding the elements that hash to the same slot to the linked list to which that slot points. At the same time, deletions are easy, You simply delete elements from the linked list.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>108.What is the Hash Function?</strong></o:p></p>
+<p class="MsoNormal"><o:p>The hash function is an important part of the hashing technique. This function is used to transform the keys into table addresses. The hash function we choose should be easy to compute and should be able to transform the keys into integers in the range 0 to TR-1. Because most of the commonly used hash functions are based on arithmetic operations, We should convert the keys to numbers on which arithmetic operations can be performed</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>109.What is an Visualizations?</strong></o:p></p>
+<p class="MsoNormal"><o:p>The visualization is the basically a way of presentation ,Its just a fancy name for the diagrams, pictures, screen shots, prototypes, and any other visual representations created to help through and design the graphical user interface of your product.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>110.What is virtual inheritance?&nbsp;</strong></o:p></p>
+<p class="MsoNormal"><o:p>Inheritance is a basically can be private , public, or virtual. With virtual inheritance there is only one copy of each object even if the object appears more than once in the hierarchy.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>111.What is multithreading&nbsp;</strong></o:p></p>
+<p class="MsoNormal"><o:p>Multithreading is defined as :It is the task of creating a new thread of execution within an existing process rather than starting a new process to begin a function. It is the ability of an operating system to concurrently run programs that have been divided into subcomponents, or threads.&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>112.What is the use of using?</strong></o:p></p>
+<p class="MsoNormal"><o:p>Using is bassically a namespace scope. Its directive used to declare the accessibility of identifiers declared within a namespace scope.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>113.What is the use of exception handling?</strong></o:p></p>
+<p class="MsoNormal"><o:p>Exception handling is bassically used to detect exceptions becouse it can be taken a corresponding action<o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>114.What is EOF?</strong></o:p></p>
+<p class="MsoNormal"><o:p>EOF bassically stands for End of File, It is used to check for the end of file when a file is being read.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>115.Define the parameterized macros?</strong></o:p></p>
+<p class="MsoNormal"><o:p>Parameterized macros are use for the parameters . It is the one which consist of template with insertion points for the addition of parameters.<o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>116.What is overflow error?</strong></o:p></p>
+<p class="MsoNormal"><o:p>Overflow error basically a type of arithmatic errors.It&#39;s caused by the result of an arithmetic operation being greater than the actual space provided by the system.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>117.What is a nested class? Why can it be useful?</strong><o:p></o:p><br />
+	Nested classes basically useful for organizing code and controlling access and dependencies. Nested classes obey access rules just like other parts of a class do.and that class is a class enclosed within the scope of another class.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>118.What are the disadvantages of C++?</strong></o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p>a)It&#39;s not pure object oriented programming language.</o:p></p>
+<p class="MsoNormal"><o:p>b)Its a Platform dependent<o:p></o:p><br />
+	c)C++ does not give excellant graphics as compare to java.<o:p></o:p><br />
+	d)Its Not case sensitive.<o:p></o:p><br />
+	e)C++ have Less features as comapred to Java&amp; C#.<o:p></o:p><br />
+	f)Its Not applicable in web enviornment.<o:p></o:p><br />
+	g)Does not provide very strong type-checking.&nbsp;<o:p></o:p><br />
+	h)c++ code is easily prone to errors related to data types, their conversions.<o:p></o:p><br />
+	i)Does not provide efficient means for garbage collection.&nbsp;<o:p></o:p><br />
+	j)No built in support for threads</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>119.What is an iterator?</strong></o:p></p>
+<p class="MsoNormal"><o:p>An iterator is a bassically a type of object that represents a stream of data. It is Unlike a sequence, an iterator can only provide the next item. The for-in statement uses iterators to control the loop, and iterators can also be used in many other contexts</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>120.What is the Auto Storage Class?</strong></o:p></p>
+<p class="MsoNormal"><o:p>Auto Storage Class is bassically the default. Variables are automatically created and initialized, When they are defined and are destroyed at the end of the block containing their definition. They are not visible outside that block.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>121.What is callback function?</strong></o:p></p>
+<p class="MsoNormal"><o:p>Callback function is the type of pointer for a function</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>122.What is the use of tellg ()?</strong></o:p></p>
+<p class="MsoNormal"><o:p>tellg () provides a information about the current position of input/get pointer.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>123.What is the use of tellp ()?</strong></o:p></p>
+<p class="MsoNormal"><o:p>tellp ()use for the poitner postion :Its provides the current position of output/put pointer</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>124.Define the generic programming?</strong></o:p></p>
+<p class="MsoNormal"><o:p>Generic Programmng is type of method. The method in which generic types are used as arguments in algorithms for different data types and data structures is called generic programming.</o:p></p>
+<p class="MsoNormal"><o:p><o:p></o:p></o:p></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><o:p><strong>125.What is the use of Microsoft foundation class library?</strong></o:p></p>
+<p class="MsoNormal"><o:p>The Microsoft Foundation Class Library also called as A Microsoft Foundation Classes or MFC. It is basically a library that wraps portions of the Windows API in C++ classes, and including functionality that enables them to use a default application framework. Classes are defined for many of the handle-managed Windows objects and also for predefined windows and common controls. MFC library would help us reduce the code and development time.<o:p></o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+        </div>
+        </div>
+</div>
+<form action="/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549"  accept-charset="UTF-8" method="post" id="fivestar-form-node-21549" class="fivestar-widget">
+<div><div class="fivestar-form-vote-21549 clear-block"><input type="hidden" name="content_type" id="edit-content-type" value="node"  />
+<input type="hidden" name="content_id" id="edit-content-id" value="21549"  />
+<div class="fivestar-form-item  fivestar-average-stars fivestar-labels-hover"><div class="form-item" id="edit-vote-wrapper">
+ <input type="hidden" name="vote_count" id="edit-vote-count" value="242"  />
+<input type="hidden" name="vote_average" id="edit-vote-average" value="76.6116"  />
+<input type="hidden" name="auto_submit_path" id="edit-auto-submit-path" value="/power-preparation/fivestar/vote/node/21549/vote"  class="fivestar-path" />
+<select name="vote" class="form-select" id="edit-vote-1" ><option value="-">Select rating</option><option value="20">Poor</option><option value="40">Okay</option><option value="60">Good</option><option value="80" selected="selected">Great</option><option value="100">Awesome</option></select><input type="hidden" name="auto_submit_token" id="edit-auto-submit-token" value="57b82d1bb0305c781fbfcbc13895048e"  class="fivestar-token" />
+
+ <div class="description"><div class="fivestar-summary fivestar-feedback-enabled">&nbsp;</div></div>
+</div>
+</div><input type="hidden" name="destination" id="edit-destination" value="node/21549"  />
+<span class="art-button-wrapper"><span class="l"></span><span class="r"></span><input type="submit" name="op" id="edit-fivestar-submit" value="Rate"  class="form-submit fivestar-submit art-button"/></span><input type="hidden" name="form_build_id" id="form-4de45ee9d4998b101f86cfb34c8912a9" value="form-4de45ee9d4998b101f86cfb34c8912a9"  />
+<input type="hidden" name="form_id" id="edit-fivestar-form-node-21549" value="fivestar_form_node_21549"  />
+</div>
+</div></form>
+</div></div>
+</div>
+</div>    <!-- /article-content -->
+</div> <!--art-postcontent-->
+<div style="height: 25px;
+width: 595px;
+float: left;">
+<div id='useful_form_div' style="width: 330px;
+float: left;
+font-size: 13px;
+padding-left: 12px;height: 25px;">
+<form action="/power-preparation/technical-interview-preparation/c-plus-interview-questions-21549"  accept-charset="UTF-8" method="post" id="found-useful-form">
+<div><div class="form-item" id="edit-nid-wrapper">
+ <input type="text" maxlength="128" name="nid" id="edit-nid" size="60" value="21549" style="display: none;" class="form-text" />
+</div>
+<div class="form-item">
+ <label>Found This Useful ? : </label>
+ <div class="form-radios"><div class="form-item" id="edit-useful-1-wrapper">
+ <label class="option" for="edit-useful-1"><input type="radio" id="edit-useful-1" name="useful" value="1"   onchange="form.submit()" class="form-radio" /> Yes</label>
+</div>
+<div class="form-item" id="edit-useful-0-wrapper">
+ <label class="option" for="edit-useful-0"><input type="radio" id="edit-useful-0" name="useful" value="0"   onchange="form.submit()" class="form-radio" /> No</label>
+</div>
+</div>
+</div>
+<span class="art-button-wrapper"><span class="l"></span><span class="r"></span><input type="submit" name="op" id="edit-submit" value="submit"  style="display: none;" class="form-submit art-button"/></span><input type="hidden" name="form_build_id" id="form-8b2367e537ce8af87ed22f3d78f8d228" value="form-8b2367e537ce8af87ed22f3d78f8d228"  />
+<input type="hidden" name="form_id" id="edit-found-useful-form" value="found_useful_form"  />
+
+</div></form>
+</div>
+<div class="nextprev" style="float: left;width: 250px;margin-bottom: 25px;">
+<ul style="padding: 2px;float: left;width: 250px;">
+<li style="float: left;"><a href="http://p3.placement.freshersworld.com/power-preparation/list-content/21548" style="font-size: 12px;color: #2a94c7;"> << Previous</a></li>
+<li style="float: right;"><a href="http://p3.placement.freshersworld.com/power-preparation/list-content/22489" style="font-size: 12px;color: #2a94c7;"> Next >> </a></li>
+</ul>
+</div>
+</div>
+<div class="cleared"></div>
+<!--
+-->
+</div>
+</div>
+</div>
+</div><!--
+<div style="float:left;">
+<div class="commet-class" style="color: #333333;font-weight: bold;width: 625px;float: left;font-size: 16px;padding: 0px 0px 7px 12px;">Join the conversation(1)</div>
+</div>
+-->																																																																											</div>
+							<div class="art-layout-cell art-sidebar2"><div class="art-block clear-block block block-block" id="block-block-98">
+    <div class="art-block-body">
+
+	<div class="art-blockcontent content">
+	    <div class="art-blockcontent-tl"></div>
+	    <div class="art-blockcontent-tr"></div>
+	    <div class="art-blockcontent-bl"></div>
+	    <div class="art-blockcontent-br"></div>
+	    <div class="art-blockcontent-tc"></div>
+	    <div class="art-blockcontent-bc"></div>
+	    <div class="art-blockcontent-cl"></div>
+	    <div class="art-blockcontent-cr"></div>
+	    <div class="art-blockcontent-cc"></div>
+	    <div class="art-blockcontent-body">
+	<!-- block-content -->
+
+		<div style="float:left;">
+<script type='text/javascript'>
+
+GA_googleFillSlot("FW_P3_Inner_Skyscraper");
+
+</script></div>
+
+	<!-- /block-content -->
+
+	    </div>
+	</div>
+
+
+    </div>
+</div>
+</div>						</div>
+					</div>
+					<div class="cleared"></div>
+										<div id="banner6"><div id="banner6-block-114">
+
+  <div class="content">
+    <div id="keywords_section">
+	<h2 class="grey-bg fix-margin" id="keywords_h2">
+		Read more</h2>
+	<ul class="keyword-list">
+		<li>
+			<a href="http://placement.freshersworld.com/power-preparation/Interview-Preparation/#interview-tip">Interview tips</a></li>
+		<li>
+			<a href="http://placement.freshersworld.com/power-preparation/Job-Interview/Preparation-and-basic-tips-35716">Job interview</a></li>
+		<li>
+			<a href="http://placement.freshersworld.com/power-preparation/Interview-Preparation">Interview preparation</a></li>
+		<li>
+			<a href="http://placement.freshersworld.com/power-preparation/phone-interview">Phone interview</a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/Interview/Job-interview-basic-tips-with-interview-questions-answers-35715">Interview preparation Tips </a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/Job-Interview/Preparation-and-basic-tips-35716">Interview Preparation and basic tips</a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/Job-interview/Different-parts-of-interview-preparation-35719">4 different parts of interview preparation</a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/Interview-dressing-35711">How To Dress For Your Next Job Interview</a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/Job-interview/Important-Interview-Body-Language-35717">Interview body language </a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/Bank-Interview-questions-Answers">Bank Interview questions & Answers</a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/gd-preparation/general-gd-topics-with-answers-39728">Group Discussion Topics</a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/GD-preparation/basic-GD-tips-469">Group discussion tips</a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/types-group-discussion">Types of Group Discussion</a></li>
+				<li>
+			<a href="http://p3.placement.freshersworld.com/power-preparation/hr-interview"> HR interview questions</a></li>
+			</ul>
+</div>
+  </div>
+</div></div>					<div class="art-footer">
+						<div class="art-footer-t"></div>
+						<div class="art-footer-body">
+							<div class="art-footer-text">
+																<div class="art-block clear-block block block-block" id="block-block-118">
+    <div class="art-block-body">
+
+	<div class="art-blockcontent content">
+	    <div class="art-blockcontent-tl"></div>
+	    <div class="art-blockcontent-tr"></div>
+	    <div class="art-blockcontent-bl"></div>
+	    <div class="art-blockcontent-br"></div>
+	    <div class="art-blockcontent-tc"></div>
+	    <div class="art-blockcontent-bc"></div>
+	    <div class="art-blockcontent-cl"></div>
+	    <div class="art-blockcontent-cr"></div>
+	    <div class="art-blockcontent-cc"></div>
+	    <div class="art-blockcontent-body">
+	<!-- block-content -->
+
+		<div style="font-size: 11px;line-height: 15px;text-align: justify;font-family:helvetica neue,helvetica, arial,sans-serif;color:#333333;font-style: italic;">
+	</div>
+
+	<!-- /block-content -->
+
+	    </div>
+	</div>
+
+
+    </div>
+</div>
+							</div>
+							<div class="cleared"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="wrapper" style='float:left;'>
+				<div class="main_footer">
+<div class="footer">
+<div class="footer_content_new">
+<div style="float: left;height: auto;color: #FFFFFF;">
+<div class="fresher_discription_outer" style="width: 810px;">
+<div class="fresher_discription" style="width: 654px;margin: 0;">
+<div class="number_one_heading">Freshersworld.com :<span> The No.1 Jobsite for Freshers in India</span></div>
+<p style="width: 100%;">Freshersworld.com: The No.1 Jobsite for Freshers in India. Get your dream job with us. Top MNC Jobs & Government Jobs from all around India. Register and get free job alerts for Govt. Jobs and other Sarkari Naukri jobs every day!</p>
+</div>
+<div class="social_icons_services" style="float: right;width: 140px;margin: 10px 0 0 50px;">
+<div class="footer_heading" style="padding-bottom: 1px;
+border-bottom: 1px dotted #ccc;
+width: 82px;
+font-weight: bold;">Get in Touch</div>
+<div class="social_icons">
+<div class="facebook">
+<a href="https://www.facebook.com/freshersworld" target="_blank"></a>
+</div>
+<div class="twitter">
+<a href="http://twitter.com/freshersworld" target="_blank"></a>
+</div>
+<div class="linked_in">
+<a href="http://www.linkedin.com/company/freshersworld.com" target="_blank"></a>
+</div>
+<div class="google_plus">
+<a href="https://plus.google.com/102536859415473798561/posts" target="_blank"></a>
+</div>
+
+</div>
+<div style="clear:both"></div>
+</div>
+</div>
+
+</div>
+<div class="footer_border"></div>
+
+
+</div>
+</div>
+
+<!--....... Footer End .......-->
+<!--....... Footer Bottom Start .......-->
+<!---------------------------------------------------->
+
+<div class="footer_bottam">
+<div class="footer_bottam_content">
+<ul>
+<li><a href="http://www.freshersworld.com/about-us">About Us</a></li>
+<li class="vertical_divide">|</li>
+<li><a href="http://blog.freshersworld.com/" target="_blank">Blog</a></li>
+<li class="vertical_divide">|</li>
+<li><a href="http://www.freshersworld.com/faq">FAQs</a></li>
+<li class="vertical_divide">|</li>
+<li><a href="http://www.freshersworld.com/advertise">Advertise With Us</a></li>
+<li class="vertical_divide">|</li>
+<li><a href="http://corp.freshersworld.com/employers">Recruitment Solutions</a></li>
+<li class="vertical_divide">|</li>
+<li><a href="http://www.freshersworld.com/contactus">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<!--....... Footer Bottom End .......-->
+
+<!--....... Footer Last Start .......-->
+<div class="footer_bottam">
+<div class="footer_bottam_content footer_bottam_content_last ">
+<ul>
+<li><a class="footer_last_link" href="http://www.freshersworld.com/terms-of-use">Terms of Use</a></li>
+<li class="vertical_divide_bottom">|</li>
+<li><a class="footer_last_link" href="http://www.freshersworld.com/privacy">Privacy Policy</a></li>
+<li class="vertical_divide_bottom">|</li>
+<li><a class="footer_last_link" href="http://www.freshersworld.com/copyright">Copyright</a></li>
+<li class="vertical_divide_bottom">|</li>
+<li><a class="footer_last_link" href="http://www.freshersworld.com/sitemap">Sitemap</a></li>
+<li class="copy_right">&copy; 2000 - 2016 Freshersworld.com</li>
+</ul>
+</div>
+</div>
+</div>			</div>
+			<div class="cleared"></div>
+		</div>
+		<!--
+		if the user is drupal root , then bellow html code will be adding to the page
+		if you want to change this for unpaid users change the condition for the unpaid users
+		-->
+				<!--
+		<div id="flyoutWidget" >
+				</div>-->
+		<!--closes out "container" div-->
+
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-400510-1"]);_gaq.push(["_gat._anonymizeIp"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+
+
+	</body>
+</html>
+
